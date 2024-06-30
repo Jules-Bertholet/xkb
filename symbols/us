@@ -1,0 +1,88 @@
+partial alphanumeric_keys
+xkb_symbols "colemak_dh_wide_am" {
+
+    include "us(colemak_dh_wide)"
+
+    name[Group1] = "English (Colemak-DH Wide, American)";
+
+    key.type[Group1] = "EIGHT_LEVEL";
+    //                                                                               SWUNG DASH WORD SEPARATOR MIDDLE DOT TWO-EM DASH THREE-EM DASH
+    key <TLDE> { [       grave,   asciitilde,           dead_grave,           dead_tilde, U2053,                    U2E31,      U2E3A,        U2E3B ] };
+    //                                                                              INTERROBANG INVERTED INTERROBANG
+    key <AE01> { [            1,      exclam,           exclamdown,            paragraph, U203D,               U2E18] };
+    key <AE02> { [            2,          at,               degree,       dead_abovering, copyright, registered ] };
+    //                                                                            TRIPLE DAGGER FIGURE DASH
+    key <AE03> { [            3,  numbersign,               dagger,         doubledagger, U2E4B,      U2012 ] };
+    key <AE04> { [            4,      dollar,                 cent,        dead_currency ] };
+    key <AE05> { [            5,     percent,             EuroSign,             permille ] };
+    //                                                                           CARET INSERTION POINT
+    key <AE06> { [            6, asciicircum,      dead_circumflex,           dead_caron, caret, U2041 ] };
+    //                                                                        HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
+    key <AE07> { [        equal,        plus,           dead_greek,             NoSymbol, U2027,        U2E40,         U2E5D,                 U2E17 ] };
+    //                                                                         TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
+    key <AE08> { [            7,   ampersand,   doublelowquotemark,   singlelowquotemark, U204A,                   U2E52 ],
+                 type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
+    //                                                                                        ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
+    key <AE09> { [            8,    asterisk,               ssharp,              section, U1E9E,       U204E,                           U2051,    U2042 ],
+                 type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
+    //                                                                  LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
+    key <AE10> { [            9,   parenleft,  leftdoublequotemark,  leftsinglequotemark, U2E28,                  U2E26,                        U2E20 ] };
+    //                                                                 RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
+    key <AE11> { [            0,  parenright, rightdoublequotemark, rightsinglequotemark, U2E29,                    U2E27,                        U2E21 ] };
+    //                                                                                   HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
+    key <AE12> { [        minus,  underscore,               endash,               emdash, U2010,               U2011,         U2015,     hyphen ] };
+
+    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key <AD02> { [            w,           W,           ediaeresis,           Ediaeresis ] };
+    key <AD03> { [            f,           F,          ocircumflex,          Ocircumflex ] };
+    key <AD04> { [            p,           P,          acircumflex,          Acircumflex ] };
+    key <AD05> { [            b,           B,           odiaeresis,           Odiaeresis ] };
+    //                                         SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET
+    key <AD06> { [ bracketleft,   braceleft,         guillemotleft,                U2039,                    U2E24,                U2E22 ],
+                 type[Group1] = "EIGHT_LEVEL" };
+    key <AD07> { [            j,           J,                   ae,                   AE ] };
+    key <AD08> { [            l,           L,           idiaeresis,           Idiaeresis ] };
+    key.type[Group1] = "EIGHT_LEVEL";
+    key <AD11> { [    semicolon,       colon,      dead_belowcomma,          dead_macron ] };
+    key <AD12> { [   apostrophe,    quotedbl,           dead_acute,           dead_breve ] };
+    //                                                                                DOUBLE VERTICAL LINE BULLET
+    key <BKSL> { [    backslash,         bar,       periodcentered,     ISO_Level5_Latch, brokenbar, U2016, U2022  ] };
+
+    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key <AC02> { [            r,           R,               agrave,               Agrave ] };
+    key <AC03> { [            s,           S,          ucircumflex,          Ucircumflex ] };
+    key <AC04> { [            t,           T,               atilde,               Atilde, thorn, THORN ] };
+    key <AC05> { [            g,           G,                aring,                Aring ] };
+    //                                        SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET
+    key <AC06> { [ bracketright,  braceright,       guillemotright,                U203A,                     U2E25,                 U2E23 ],
+                 type[Group1] = "EIGHT_LEVEL" };
+    key <AC07> { [            m,           M,               oslash,               Oslash ] };
+    key <AC08> { [            n,           N,               ntilde,               Ntilde, eng, ENG ] };
+    key <AC09> { [            e,           E,               eacute,               Eacute, schwa, SCHWA ] };
+
+    key <LSGT> { [            z,          Z,                    oe,                   OE ] };
+    key <AB03> { [            d,          D,                egrave,               Egrave, eth, ETH ] };
+    key <AB04> { [            v,          V,                otilde,               Otilde ] };
+    key <AB05> { [            z,          Z,                    oe,                   OE ] };
+    key <AB06> { [        slash,   question,          questiondown,          dead_stroke ],
+                 type[Group1] = "EIGHT_LEVEL" };
+    key <AB07> { [            k,          K,           icircumflex,          Icircumflex ] };
+    key <AB08> { [            h,          H,           ecircumflex,          Ecircumflex ] };
+    key.type[Group1] = "EIGHT_LEVEL";
+    key <AB09> { [        comma,       less,          dead_cedilla,          dead_ogonek ] };
+    key <AB10> { [       period,    greater,              ellipsis,        dead_abovedot ] };
+
+    //                                                                            NNBSP  THIN SPACE
+    key <SPCE> { [        space,      space,          nobreakspace,                U202F,     U2009 ],
+                 type[group1]="EIGHT_LEVEL" };
+
+    key.type[Group1] = "ARROW_THREE_LEVEL";
+    //                                                                     UP DOWN ARROW
+    key <UP>   { [                 NoSymbol,               uparrow,                U2195 ] };
+    //                                             RIGHTWARDS ARROW OVER LEFTWARDS ARROW
+    key <LEFT> { [                 NoSymbol,             leftarrow,                U21C4 ] };
+    //                                        UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW
+    key <DOWN> { [                 NoSymbol,             downarrow,                U21C5 ] };
+    //                                                                  LEFT RIGHT ARROW
+    key <RGHT> { [                 NoSymbol,            rightarrow,                U2194 ] };
+};
