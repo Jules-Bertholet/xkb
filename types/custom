@@ -74,24 +74,26 @@ default partial xkb_types "custom" {
         level_name[Level8] = "X Shift AltGr";
     };
 
-    type "ARROW_THREE_LEVEL" {
-        modifiers = Shift + LevelThree;
+    type "SEVEN_LEVEL" {
+        modifiers = Shift + LevelThree + LevelFive;
         map[None] = Level1;
         map[Shift] = Level1;
         map[LevelThree] = Level2;
         map[Shift+LevelThree] = Level3;
+        map[LevelFive] = Level4;
+        map[Shift+LevelFive] = Level5;
+        map[LevelThree+LevelFive] = Level6;
+        map[Shift+LevelThree+LevelFive] = Level7;
         preserve[Shift] = Shift;
         preserve[Shift+LevelThree] = None;
+        preserve[Shift+LevelFive] = None;
+        preserve[Shift+LevelThree+LevelFive] = None;
         level_name[Level1] = "Base";
         level_name[Level2] = "AltGr";
         level_name[Level3] = "Shift AltGr";
-    };
-
-    type "TWO_LEVEL_ALTGR" {
-        modifiers = LevelThree;
-        map[None] = Level1;
-        map[LevelThree] = Level2;
-        level_name[Level1] = "Base";
-        level_name[Level2] = "AltGr";
+        level_name[Level4] = "X";
+        level_name[Level5] = "X Shift";
+        level_name[Level6] = "X AltGr";
+        level_name[Level8] = "X Shift AltGr";
     };
 };
