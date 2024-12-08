@@ -2,6 +2,42 @@ default partial xkb_types "custom" {
 
     virtual_modifiers LevelThree, LevelFive;
 
+    type "EIGHT_LEVEL_34_SEMIALPHABETIC" {
+        modifiers = Shift + Lock + LevelThree + LevelFive;
+        map[None] = Level1;
+        map[Lock] = Level1;
+        map[Shift] = Level2;
+        map[Shift+Lock] = Level2;
+        map[LevelThree] = Level3;
+        map[Lock+LevelThree] = Level4;
+        map[Shift+LevelThree] = Level4;
+        map[Shift+Lock+LevelThree] = Level3;
+        map[LevelFive] = Level5;
+        map[Lock+LevelFive] = Level5;
+        map[Shift+LevelFive] = Level6;
+        map[Shift+Lock+LevelFive] = Level6;
+        map[LevelThree+LevelFive] = Level7;
+        map[Lock+LevelThree+LevelFive] = Level7;
+        map[Shift+LevelThree+LevelFive] = Level8;
+        map[Shift+Lock+LevelThree+LevelFive] = Level8;
+        preserve[Lock] = Lock;
+        preserve[Shift+Lock] = Lock;
+        preserve[Lock+LevelThree] = None;
+        preserve[Shift+Lock+LevelThree] = None;
+        preserve[Lock+LevelFive] = Lock;
+        preserve[Shift+Lock+LevelFive] = Lock;
+        preserve[Lock+LevelThree+LevelFive] = Lock;
+        preserve[Shift+Lock+LevelThree+LevelFive] = Lock;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Shift";
+        level_name[Level3] = "AltGr";
+        level_name[Level4] = "Shift AltGr";
+        level_name[Level5] = "X";
+        level_name[Level6] = "X Shift";
+        level_name[Level7] = "X AltGr";
+        level_name[Level8] = "X Shift AltGr";
+    };
+
     type "EIGHT_LEVEL_35_SEMIALPHABETIC" {
         modifiers = Shift + Lock + LevelThree + LevelFive;
         map[None] = Level1;

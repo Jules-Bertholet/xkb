@@ -22,11 +22,14 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
     key <AE07> { [ equal        , plus          , ISO_Last_Group      , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
     //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
+    key.type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC";
     key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ],
-                 type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
-    //                                                                                            ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
-    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ],
+                 [ 7            , ampersand     , U03D7               , U03CF               ],
+                 type[Group2] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
+    //                                                                                             ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
+    key <AE09> { [ 8            , asterisk      , ssharp              , section             , Ssharp, U204E      , U2051                          , U2042    ],
                  type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
+    key.type[Group1] = "EIGHT_LEVEL";
     //                                                                      LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
     key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U2E28, U2E26                 , U2E20                        ] };
     //                                                                     RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
@@ -120,31 +123,31 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key.type[Group1] = "SEVEN_LEVEL";
     //                                                                     UP DOWN ARROW  UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW  NORTH EAST ARROW     LEFTWARDS ARROW WITH TIP UPWARDS    RIGHTWARDS ARROW WITH TIP UPWARDS
-    key <UP>   { [ NoSymbol                , uparrow              , U2195               , U21C5                                     , U2197           , U2B11                              , U2B0F                               ] };
+    key <UP>   { [ Up                      , uparrow              , U2195               , U21C5                                     , U2197           , U2B11                              , U2B0F                               ] };
     //                                                   ANTICLOCKWISE OPEN CIRCLE ARROW       LEFTWARDS ARROW OVER RIGHTWARDS ARROW  NORTH WEST ARROW   DOWNWARDS ARROW WITH TIP LEFTWARDS     UPWARDS ARROW WITH TIP LEFTWARDS
-    key <LEFT> { [ NoSymbol                , leftarrow            , U21BA               , U21C6                                     , U2196           , U21B2                              , U21B0                               ] };
+    key <LEFT> { [ Left                    , leftarrow            , U21BA               , U21C6                                     , U2196           , U21B2                              , U21B0                               ] };
     //                                                                  LEFT RIGHT ARROW  DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW  SOUTH WEST ARROW   LEFTWARDS ARROW WITH TIP DOWNWARDS  RIGHTWARDS ARROW WITH TIP DOWNWARDS
-    key <DOWN> { [ NoSymbol                , downarrow            , U2194               , U21F5                                     , U2199           , U2B10                              , U2B0E                               ] };
+    key <DOWN> { [ Down                    , downarrow            , U2194               , U21F5                                     , U2199           , U2B10                              , U2B0E                               ] };
     //                                                       CLOCKWISE OPEN CIRCLE ARROW       RIGHTWARDS ARROW OVER LEFTWARDS ARROW  SOUTH EAST ARROW  DOWNWARDS ARROW WITH TIP RIGHTWARDS    UPWARDS ARROW WITH TIP RIGHTWARDS
-    key <RGHT> { [ NoSymbol                , rightarrow           , U21BB               , U21C4                                     , U2198           , U21B3                              , U21B1                               ] };
+    key <RGHT> { [ Right                   , rightarrow           , U21BB               , U21C4                                     , U2198           , U21B3                              , U21B1                               ] };
 
 
     ///// Modifier \\\\\
 
-    replace key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
-    replace key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
-    replace key <LCTL> { [ Shift_L, Caps_Lock ], type[Group1]="TWO_LEVEL" };
-    replace key <LALT> { [ Control_L ], type[Group1]="ONE_LEVEL" };
-    replace key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
-    replace key <RALT> { [ Shift_R, Caps_Lock ], type[Group1]="TWO_LEVEL" };
-    replace key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[Group1]="PC_CONTROL_LEVEL2" };
-    replace key <MENU> { [ Super_R ], type[Group1]="ONE_LEVEL" };
+    key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
+    key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
+    key <LCTL> { [ Shift_L, Caps_Lock ], type[Group1]="TWO_LEVEL" };
+    key <LALT> { [ Control_L ], type[Group1]="ONE_LEVEL" };
+    key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
+    key <RALT> { [ Shift_R, Caps_Lock ], type[Group1]="TWO_LEVEL" };
+    key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[Group1]="PC_CONTROL_LEVEL2" };
+    key <MENU> { [ Super_R ], type[Group1]="ONE_LEVEL" };
 
 
     ///// Keypad \\\\\
 
-    key <KPEN> { [ KP_Enter ] };
-    key <NMLK> { [ Num_Lock, Pointer_EnableKeys ], type[Group1]="SEVEN_LEVEL" };
+    key <KPEN> { [ KP_Enter ], type[Group1]="ONE_LEVEL" };
+    key <NMLK> { [ Num_Lock ], type[Group1]="ONE_LEVEL" };
 
     key.type[Group1] = "KEYPAD_ALTGR";
     key <KP7>  { [ KP_Home       , U2196         , KP_7       , NoSymbol    , NoSymbol   , NoSymbol   ] };
