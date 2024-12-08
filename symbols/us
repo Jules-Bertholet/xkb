@@ -1,10 +1,9 @@
 partial alphanumeric_keys modifier_keys keypad_keys
 xkb_symbols "colemak_dh_wide_am" {
 
-    include "us(colemak_dh_wide)"
+    include "us(basic)"
 
     name[Group1] = "English (Colemak-DH Wide, American)";
-    name[Group2] = "Greek (Colemak-DH Wide, American)";
 
     ///// Alphanumeric \\\\\
 
@@ -21,13 +20,13 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                               CARET INSERTION POINT
     key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041 ] };
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
-    key <AE07> { [ equal        , plus          , ISO_Group_Latch     , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
+    key <AE07> { [ equal        , plus          , ISO_Last_Group      , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
     //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
     key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ],
                  type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
     //                                                                                            ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
     key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ],
-                  type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
+                 type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
     //                                                                      LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
     key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U2E28, U2E26                 , U2E20                        ] };
     //                                                                     RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
@@ -37,27 +36,27 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    key.type[Group2] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ],
+                 [ ISO_First_Group   ] };
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           ],
-                 [ Greek_omega  , Greek_OMEGA   ] };
+                 [ Greek_omega  , Greek_OMEGA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ],
-                 [ Greek_phi    , Greek_PHI     ] };
+                 [ Greek_phi    , Greek_PHI     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD04> { [ p            , P             , acircumflex         , Acircumflex          ],
-                 [ Greek_pi     , Greek_PI      ] };
+                 [ Greek_pi     , Greek_PI      ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           ],
-                 [ Greek_beta   , Greek_BETA    ] };
+                 [ Greek_beta   , Greek_BETA    ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET LEFT SQUARE BRACKET WITH QUILL
-    key <AD06> { [ bracketleft  , braceleft     , guillemotleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
+    key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
                  type[Group1] = "EIGHT_LEVEL" };
     key <AD07> { [ j            , J             , ae                  , AE                   ],
-                 [ Greek_psi    , Greek_PSI     ] };
+                 [ Greek_psi    , Greek_PSI     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           ],
-                 [ Greek_lambda , Greek_LAMBDA  ] };
+                 [ Greek_lambda , Greek_LAMBDA  ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD09> { [ u            , U             , uacute              , uacute               ],
-                 [ Greek_theta  , Greek_THETA   ] };
+                 [ Greek_theta  , Greek_THETA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           ],
-                 [ Greek_upsilon, Greek_UPSILON ] };
+                 [ Greek_upsilon, Greek_UPSILON ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key.type[Group1] = "EIGHT_LEVEL";
     key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          ] };
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
@@ -65,57 +64,56 @@ xkb_symbols "colemak_dh_wide_am" {
     key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
 
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    key.type[Group2] = "EIGHT_LEVEL_ALPHABETIC";
     key <AC01> { [ a            , A             , aacute              , Aacute               ],
-                 [ Greek_alpha  ,    Greek_ALPHA] };
+                 [ Greek_alpha  , Greek_ALPHA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC02> { [ r            , R             , agrave              , Agrave               ],
-                 [ Greek_rho    , Greek_RHO     ] };
+                 [ Greek_rho    , Greek_RHO     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     //                                                                                        Long S
     key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F ],
-                 [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma] };
+                 [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN ],
-                 [ Greek_tau    , Greek_TAU     ] };
+                 [ Greek_tau    , Greek_TAU     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC05> { [ g            , G             , aring               , Aring                ],
-                 [ Greek_gamma  , Greek_GAMMA   ] };
+                 [ Greek_gamma  , Greek_GAMMA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
-    key <AC06> { [ bracketright , braceright    , guillemotright      , U203A               , U2E25                    , U2E23                , U2046                          ],
+    key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23                , U2046                          ],
                  type[Group1] = "EIGHT_LEVEL" };
     key <AC07> { [ m            , M             , oslash              , Oslash               ],
-                 [ Greek_mu     , Greek_MU      ] };
+                 [ Greek_mu     , Greek_MU      ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ],
-                 [ Greek_nu     , Greek_NU      ] };
+                 [ Greek_nu     , Greek_NU      ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC09> { [ e            , E             , eacute              , Eacute              , schwa, SCHWA ],
-                 [ Greek_epsilon, Greek_EPSILON ] };
+                 [ Greek_epsilon, Greek_EPSILON ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AC10> { [ i            , I             , iacute              , Iacute              ],
-                 [ Greek_iota   , Greek_IOTA    ] };
-    key <AC11> { [ o            , o                , oacute              , Oacute              ],
-                 [ Greek_omicron, Greek_OMICRON ] };
+                 [ Greek_iota   , Greek_IOTA    , dead_iota ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
+    key <AC11> { [ o            , O             , oacute              , Oacute              ],
+                 [ Greek_omicron, Greek_OMICRON ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
 
     key <LSGT> { [ z            , Z             , oe                   , OE                   ],
-                 [ Greek_zeta   , Greek_ZETA    ] };
+                 [ Greek_zeta   , Greek_ZETA    ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AB01> { [ x            , X             , ugrave               , Ugrave               ],
-                 [ Greek_chi    , Greek_CHI     ] };
+                 [ Greek_chi    , Greek_CHI     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AB02> { [ c            , C             , ccedilla             , Ccedilla             ],
-                 [ Greek_xi     , Greek_XI      ] };
+                 [ Greek_xi     , Greek_XI      ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AB03> { [ d            , D             , egrave               , Egrave              , eth, ETH ],
-                 [ Greek_delta  , Greek_DELTA   ] };
+                 [ Greek_delta  , Greek_DELTA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AB04> { [ v            , V             , otilde               , Otilde               ] };
     key <AB05> { [ z            , Z             , oe                   , OE                   ],
-                 [ Greek_zeta   , Greek_ZETA    ] };
+                 [ Greek_zeta   , Greek_ZETA    ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     //                                                                      REVERSED QUESTION MARK
     key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E ],
                  type[Group1] = "EIGHT_LEVEL" };
     key <AB07> { [ k            , K             , icircumflex          , Icircumflex          ],
-                 [ Greek_kappa  , Greek_KAPPA   ] };
+                 [ Greek_kappa  , Greek_KAPPA   ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          ],
-                 [ Greek_eta    , Greek_ETA     ]  };
+                 [ Greek_eta    , Greek_ETA     ], type[Group2] = "EIGHT_LEVEL_ALPHABETIC" };
     key.type[Group1] = "EIGHT_LEVEL";
     key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          ] };
     key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        ] };
 
     //                                                                                NNBSP  THIN SPACE
     key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009     ],
-                 type[group1]="EIGHT_LEVEL" };
+                 type[Group1]="EIGHT_LEVEL" };
 
 
     ///// Arrow \\\\\
@@ -133,20 +131,20 @@ xkb_symbols "colemak_dh_wide_am" {
 
     ///// Modifier \\\\\
 
-    replace key <CAPS> { [ Caps_Lock ], type[group1] = "ONE_LEVEL" };
-    replace key <LFSH> { [ Alt_L ], type[group1]="ONE_LEVEL" };
-    replace key <LCTL> { [ Shift_L, Caps_Lock ], type[group1]="TWO_LEVEL" };
-    replace key <LALT> { [ Control_L ], type[group1]="ONE_LEVEL" };
-    replace key <RTSH> { [ Menu, Multi_key ], type[group1]="SEVEN_LEVEL" };
-    replace key <RALT> { [ Shift_R, Caps_Lock ], type[group1]="TWO_LEVEL" };
-    replace key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[group1]="PC_CONTROL_LEVEL2" };
-    replace key <MENU> { [ Super_R ], type[group1]="ONE_LEVEL" };
+    replace key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
+    replace key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
+    replace key <LCTL> { [ Shift_L, Caps_Lock ], type[Group1]="TWO_LEVEL" };
+    replace key <LALT> { [ Control_L ], type[Group1]="ONE_LEVEL" };
+    replace key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
+    replace key <RALT> { [ Shift_R, Caps_Lock ], type[Group1]="TWO_LEVEL" };
+    replace key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[Group1]="PC_CONTROL_LEVEL2" };
+    replace key <MENU> { [ Super_R ], type[Group1]="ONE_LEVEL" };
 
 
     ///// Keypad \\\\\
 
     key <KPEN> { [ KP_Enter ] };
-    key <NMLK> { [ Num_Lock, Pointer_EnableKeys ], type[group1]="SEVEN_LEVEL" };
+    key <NMLK> { [ Num_Lock, Pointer_EnableKeys ], type[Group1]="SEVEN_LEVEL" };
 
     key.type[Group1] = "KEYPAD_ALTGR";
     key <KP7>  { [ KP_Home       , U2196         , KP_7       , NoSymbol    , NoSymbol   , NoSymbol   ] };
@@ -154,14 +152,14 @@ xkb_symbols "colemak_dh_wide_am" {
     key <KP9>  { [ KP_Prior      , U2179         , KP_9       , NoSymbol    , NoSymbol   , NoSymbol   ] };
     key <KPDV> { [ NoSymbol      , NoSymbol      , KP_Divide  , percent     , division   , NoSymbol   ] };
 
-    key <I187> { [ {Control_L, c}, {Control_L, x}, parenleft  , colon       , bracketleft , braceleft  ] };
+    key <I187> { [ {Control_L, c}, {Control_L, x}, parenleft  , colon       , bracketleft , braceleft  ], type[Group1] = "KEYPAD_ALTGR" };
     key <KP4>  { [ KP_Left       , leftarrow     , KP_4       , UFDE4       , d           , D          ] };
     key <KP5>  { [ KP_Down       , downarrow     , KP_5       , UFDE5       , e           , E          ] };
     key <KP6>  { [ KP_Right      , rightarrow    , KP_6       , UFDE6       , f           , F          ] };
     //                                                                                      DOT OPERATOR
     key <KPMU> { [ Scroll_Lock   , NoSymbol      , KP_Multiply, asciicircum , multiply    , U22C5      ] };
 
-    key <I188> { [ {Control_L, v}, NoSymbol      , parenright , semicolon   , bracketright, braceright ] };
+    key <I188> { [ {Control_L, v}, NoSymbol      , parenright , semicolon   , bracketright, braceright ], type[Group1] = "KEYPAD_ALTGR" };
     key <KP1>  { [ KP_End        , U2199         , KP_1       , numbersign  , a           , A          ] };
     key <KP2>  { [ KP_Begin      , NoSymbol      , KP_2       , NoSymbol    , b           , B          ] };
     key <KP3>  { [ KP_Next       , U2198         , KP_3       , NoSymbol    , c           , C          ] };
