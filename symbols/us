@@ -27,7 +27,7 @@ xkb_symbols "colemak_dh_wide_am" {
                  [ 7            , ampersand     , U03D7               , U03CF               ],
                  type[Group2] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
     //                                                                                             ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
-    key <AE09> { [ 8            , asterisk      , ssharp              , section             , Ssharp, U204E      , U2051                          , U2042    ],
+    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ],
                  type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
     key.type[Group1] = "EIGHT_LEVEL";
     //                                                                      LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
