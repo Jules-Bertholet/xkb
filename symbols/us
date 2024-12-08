@@ -1,4 +1,4 @@
-partial alphanumeric_keys modifier_keys keypad_keys
+partial alphanumeric_keys modifier_keys keypad_keys alternate_group
 xkb_symbols "colemak_dh_wide_am" {
 
     include "us(basic)"
