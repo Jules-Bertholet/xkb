@@ -6,100 +6,119 @@ xkb_symbols "colemak_dh_wide_am" {
     name[Group1] = "English (Colemak-DH Wide, American)";
     name[Group2] = "Greek (Colemak-DH Wide, American)";
 
+    ///// Alphanumeric \\\\\
+
     key.type[Group1] = "EIGHT_LEVEL";
     //                                                                                SWUNG DASH WORD SEPARATOR MIDDLE DOT TWO-EM DASH THREE-EM DASH
-    key <TLDE> { [ grave        , asciitilde , dead_grave          , dead_tilde          , U2053, U2E31                   , U2E3A     , U2E3B        ] };
-    //                                                                               INTERROBANG INVERTED INTERROBANG  REVERSED PILCROW SIGN
-    key <AE01> { [ 1            , exclam     , exclamdown          , paragraph           , U203D, U2E18              , U204B                 ] };
-    key <AE02> { [ 2            , at         , degree              , dead_abovering      , copyright, registered ] };
-    //                                                                             TRIPLE DAGGER
-    key <AE03> { [ 3            , numbersign , dagger              , doubledagger        , U2E4B, figdash ] };
-    key <AE04> { [ 4            , dollar     , cent                , dead_currency        ] };
-    key <AE05> { [ 5            , percent    , EuroSign            , permille             ] };
-    //                                                                            CARET INSERTION POINT
-    key <AE06> { [ 6            , asciicircum, dead_circumflex     , dead_caron          , caret, U2041 ] };
-    //                                                                         HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
-    key <AE07> { [ equal        , plus       , dead_greek          , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
-    //                                                                          TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
-    key <AE08> { [ 7            , ampersand  , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ],
+    key <TLDE> { [ grave        , asciitilde    , dead_grave          , dead_tilde          , U2053, U2E31                   , U2E3A     , U2E3B        ] };
+    //                                                                                  INTERROBANG INVERTED INTERROBANG  REVERSED PILCROW SIGN
+    key <AE01> { [ 1            , exclam        , exclamdown          , paragraph           , U203D, U2E18              , U204B                 ] };
+    key <AE02> { [ 2            , at            , degree              , dead_abovering      , copyright, registered ] };
+    //                                                                                TRIPLE DAGGER
+    key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash ] };
+    key <AE04> { [ 4            , dollar        , cent                , dead_currency        ] };
+    key <AE05> { [ 5            , percent       , EuroSign            , permille             ] };
+    //                                                                               CARET INSERTION POINT
+    key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041 ] };
+    //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
+    key <AE07> { [ equal        , plus          , ISO_Group_Latch     , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
+    //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
+    key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ],
                  type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
-    //                                                                                         ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
-    key <AE09> { [ 8            , asterisk   , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ],
+    //                                                                                            ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
+    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ],
                   type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
-    //                                                                   LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
-    key <AE10> { [ 9            , parenleft  , leftdoublequotemark , leftsinglequotemark , U2E28, U2E26                 , U2E20                        ] };
-    //                                                                  RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
-    key <AE11> { [ 0            , parenright , rightdoublequotemark, rightsinglequotemark, U2E29, U2E27                   , U2E21                        ] };
-    //                                                                                    HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
-    key <AE12> { [ minus        , underscore , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
+    //                                                                      LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
+    key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U2E28, U2E26                 , U2E20                        ] };
+    //                                                                     RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
+    key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U2E29, U2E27                   , U2E21                        ] };
+    //                                                                                       HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
+    key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
 
-    key <TAB>  { [ Tab          ,ISO_Left_Tab, UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
+    key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     key.type[Group2] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AD01> { [ q            , Q          , adiaeresis          , Adiaeresis           ] };
-    key <AD02> { [ w            , W          , ediaeresis          , Ediaeresis           ],
-                 [ Greek_omega  , Greek_OMEGA ] };
-    key <AD03> { [ f            , F          , ocircumflex         , Ocircumflex          ],
-                 [ Greek_phi    , Greek_PHI   ] };
-    key <AD04> { [ p            , P          , acircumflex         , Acircumflex          ],
-                 [ Greek_pi     , Greek_PI    ] };
-    key <AD05> { [ b            , B          , odiaeresis          , Odiaeresis           ],
-                 [ Greek_beta   , Greek_BETA  ] };
-    //                                          SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET LEFT SQUARE BRACKET WITH QUILL
-    key <AD06> { [ bracketleft , braceleft   , guillemotleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
+    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           ],
+                 [ Greek_omega  , Greek_OMEGA   ] };
+    key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ],
+                 [ Greek_phi    , Greek_PHI     ] };
+    key <AD04> { [ p            , P             , acircumflex         , Acircumflex          ],
+                 [ Greek_pi     , Greek_PI      ] };
+    key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           ],
+                 [ Greek_beta   , Greek_BETA    ] };
+    //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET LEFT SQUARE BRACKET WITH QUILL
+    key <AD06> { [ bracketleft  , braceleft     , guillemotleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
                  type[Group1] = "EIGHT_LEVEL" };
-    key <AD07> { [ j            , J          , ae                  , AE                   ],
-                 [ Greek_psi    , Greek_PSI] };
-    key <AD08> { [ l            , L          , idiaeresis          , Idiaeresis           ],
-                 [ Greek_lambda , Greek_LAMBDA] };
-    key <AD09> { [ u            , U          , uacute              , uacute               ],
-                 [ Greek_theta  , Greek_THETA] };
-    key <AD10> { [ y            , Y          , udiaeresis          , Udiaeresis           ],
-                 [ Greek_upsilon, Greek_UPSILON] };
+    key <AD07> { [ j            , J             , ae                  , AE                   ],
+                 [ Greek_psi    , Greek_PSI     ] };
+    key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           ],
+                 [ Greek_lambda , Greek_LAMBDA  ] };
+    key <AD09> { [ u            , U             , uacute              , uacute               ],
+                 [ Greek_theta  , Greek_THETA   ] };
+    key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           ],
+                 [ Greek_upsilon, Greek_UPSILON ] };
     key.type[Group1] = "EIGHT_LEVEL";
-    key <AD11> { [ semicolon    , colon      , dead_belowcomma     , dead_macron          ] };
-    key <AD12> { [ apostrophe   , quotedbl   , dead_acute          , dead_breve           ] };
-    //                                                                             BULLET  DOUBLE VERTICAL LINE  HYPHEN BULLET
-    key <BKSL> { [ backslash    , bar        , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
+    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          ] };
+    key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
+    //                                                                                BULLET  DOUBLE VERTICAL LINE  HYPHEN BULLET
+    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
 
-    key <CAPS> { [ Caps_Lock ],
-                 type[group1] = "ONE_LEVEL" };
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     key.type[Group2] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AC01> { [ a           , A          , aacute              , Aacute               ] };
-    key <AC02> { [ r           , R          , agrave              , Agrave               ] };
-    //                                                                                    Long S
-    key <AC03> { [ s           , S          , ucircumflex         , Ucircumflex         , U017F ] };
-    key <AC04> { [ t           , T          , atilde              , Atilde              , thorn, THORN ] };
-    key <AC05> { [ g           , G          , aring               , Aring                ] };
-    //                                        SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
-    key <AC06> { [ bracketright, braceright , guillemotright      , U203A               , U2E25                    , U2E23                , U2046                          ],
+    key <AC01> { [ a            , A             , aacute              , Aacute               ],
+                 [ Greek_alpha  ,    Greek_ALPHA] };
+    key <AC02> { [ r            , R             , agrave              , Agrave               ],
+                 [ Greek_rho    , Greek_RHO     ] };
+    //                                                                                        Long S
+    key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F ],
+                 [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma] };
+    key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN ],
+                 [ Greek_tau    , Greek_TAU     ] };
+    key <AC05> { [ g            , G             , aring               , Aring                ],
+                 [ Greek_gamma  , Greek_GAMMA   ] };
+    //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
+    key <AC06> { [ bracketright , braceright    , guillemotright      , U203A               , U2E25                    , U2E23                , U2046                          ],
                  type[Group1] = "EIGHT_LEVEL" };
-    key <AC07> { [ m           , M          , oslash              , Oslash               ] };
-    key <AC08> { [ n           , N          , ntilde              , Ntilde              , eng, ENG ] };
-    key <AC09> { [ e           , E          , eacute              , Eacute              , schwa, SCHWA ] };
-    key <AC10> { [ i           , I          , iacute              , Iacute              ] };
-    key <AC11> { [ o           , o          , oacute              , Oacute              ] };
+    key <AC07> { [ m            , M             , oslash              , Oslash               ],
+                 [ Greek_mu     , Greek_MU      ] };
+    key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ],
+                 [ Greek_nu     , Greek_NU      ] };
+    key <AC09> { [ e            , E             , eacute              , Eacute              , schwa, SCHWA ],
+                 [ Greek_epsilon, Greek_EPSILON ] };
+    key <AC10> { [ i            , I             , iacute              , Iacute              ],
+                 [ Greek_iota   , Greek_IOTA    ] };
+    key <AC11> { [ o            , o                , oacute              , Oacute              ],
+                 [ Greek_omicron, Greek_OMICRON ] };
 
-    key <LSGT> { [ z           , Z         , oe                   , OE                   ] };
-    key <AB01> { [ x           , X         , ugrave               , Ugrave               ] };
-    key <AB02> { [ c           , C         , ccedilla             , Ccedilla             ] };
-    key <AB03> { [ d           , D         , egrave               , Egrave              , eth, ETH ] };
-    key <AB04> { [ v           , V         , otilde               , Otilde               ] };
-    key <AB05> { [ z           , Z         , oe                   , OE                   ] };
-    //                                                                   REVERSED QUESTION MARK
-    key <AB06> { [ slash       , question  , questiondown         , dead_stroke         , U2E2E ],
+    key <LSGT> { [ z            , Z             , oe                   , OE                   ],
+                 [ Greek_zeta   , Greek_ZETA    ] };
+    key <AB01> { [ x            , X             , ugrave               , Ugrave               ],
+                 [ Greek_chi    , Greek_CHI     ] };
+    key <AB02> { [ c            , C             , ccedilla             , Ccedilla             ],
+                 [ Greek_xi     , Greek_XI      ] };
+    key <AB03> { [ d            , D             , egrave               , Egrave              , eth, ETH ],
+                 [ Greek_delta  , Greek_DELTA   ] };
+    key <AB04> { [ v            , V             , otilde               , Otilde               ] };
+    key <AB05> { [ z            , Z             , oe                   , OE                   ],
+                 [ Greek_zeta   , Greek_ZETA    ] };
+    //                                                                      REVERSED QUESTION MARK
+    key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E ],
                  type[Group1] = "EIGHT_LEVEL" };
-    key <AB07> { [ k           , K         , icircumflex          , Icircumflex          ] };
-    key <AB08> { [ h           , H         , ecircumflex          , Ecircumflex          ] };
+    key <AB07> { [ k            , K             , icircumflex          , Icircumflex          ],
+                 [ Greek_kappa  , Greek_KAPPA   ] };
+    key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          ],
+                 [ Greek_eta    , Greek_ETA     ]  };
     key.type[Group1] = "EIGHT_LEVEL";
-    key <AB09> { [ comma       , less      , dead_cedilla         , dead_ogonek          ] };
-    key <AB10> { [ period      , greater   , ellipsis             , dead_abovedot        ] };
+    key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          ] };
+    key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        ] };
 
-    //                                                                            NNBSP  THIN SPACE
-    key <SPCE> { [ space       , space     , nobreakspace         , U202F               , U2009     ],
+    //                                                                                NNBSP  THIN SPACE
+    key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009     ],
                  type[group1]="EIGHT_LEVEL" };
 
+
+    ///// Arrow \\\\\
 
     key.type[Group1] = "SEVEN_LEVEL";
     //                                                                     UP DOWN ARROW  UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW  NORTH EAST ARROW     LEFTWARDS ARROW WITH TIP UPWARDS    RIGHTWARDS ARROW WITH TIP UPWARDS
@@ -111,6 +130,10 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                       CLOCKWISE OPEN CIRCLE ARROW       RIGHTWARDS ARROW OVER LEFTWARDS ARROW  SOUTH EAST ARROW  DOWNWARDS ARROW WITH TIP RIGHTWARDS    UPWARDS ARROW WITH TIP RIGHTWARDS
     key <RGHT> { [ NoSymbol                , rightarrow           , U21BB               , U21C4                                     , U2198           , U21B3                              , U21B1                               ] };
 
+
+    ///// Modifier \\\\\
+
+    replace key <CAPS> { [ Caps_Lock ], type[group1] = "ONE_LEVEL" };
     replace key <LFSH> { [ Alt_L ], type[group1]="ONE_LEVEL" };
     replace key <LCTL> { [ Shift_L, Caps_Lock ], type[group1]="TWO_LEVEL" };
     replace key <LALT> { [ Control_L ], type[group1]="ONE_LEVEL" };
@@ -118,6 +141,9 @@ xkb_symbols "colemak_dh_wide_am" {
     replace key <RALT> { [ Shift_R, Caps_Lock ], type[group1]="TWO_LEVEL" };
     replace key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[group1]="PC_CONTROL_LEVEL2" };
     replace key <MENU> { [ Super_R ], type[group1]="ONE_LEVEL" };
+
+
+    ///// Keypad \\\\\
 
     key <KPEN> { [ KP_Enter ] };
     key <NMLK> { [ Num_Lock, Pointer_EnableKeys ], type[group1]="SEVEN_LEVEL" };
