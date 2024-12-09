@@ -25,10 +25,10 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ], type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
     //                                                                                             ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
     key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ], type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
-    //                                                                      LEFT DOUBLE PARENTHESIS LEFT SIDEWAYS U BRACKET LEFT VERTICAL BAR WITH QUILL
-    key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U2E28, U2E26                 , U2E20                        ] };
-    //                                                                     RIGHT DOUBLE PARENTHESIS RIGHT SIDEWAYS U BRACKET RIGHT VERTICAL BAR WITH QUILL
-    key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U2E29, U2E27                   , U2E21                        ] };
+    //                                                                                         Modifier letter tuned comma LEFT VERTICAL BAR WITH QUILL  LEFT SIDEWAYS U BRACKET LEFT DOUBLE PARENTHESIS
+    key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB, U2E20                        ,  U2E26                 , U2E28 ] };
+    //                                                                                        Modifier letter apostrophe  RIGHT VERTICAL BAR WITH QUILL  RIGHT SIDEWAYS U BRACKET  RIGHT DOUBLE PARENTHESIS
+    key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U02BC                     , U2E21                        , U2E27                   , U2E29] };
     //                                                                                       HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
     key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
 
@@ -36,7 +36,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ],
                  [ ISO_First_Group   ] };
-    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           ] };
+    //                                                                                         wynn   WYNN
+    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7 ] };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
     key <AD04> { [ p            , P             , acircumflex         , Acircumflex          ] };
     key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           ] };
@@ -57,9 +58,10 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AC01> { [ a            , A             , aacute              , Aacute               ] };
     key <AC02> { [ r            , R             , agrave              , Agrave               ] };
     //                                                                                        Long S
-    key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F ] };
+    key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , S ] };
     key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN ] };
-    key <AC05> { [ g            , G             , aring               , Aring                ] };
+    //                                                                                         yogh   YOGH
+    key <AC05> { [ g            , G             , aring               , Aring                , U201D, U201C ] };
     //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
     key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23                , U2046                          ],
                  type[Group1] = "EIGHT_LEVEL" };
@@ -72,9 +74,9 @@ xkb_symbols "colemak_dh_wide_am" {
     key <LSGT> { [ z            , Z             , oe                   , OE                   ] };
     key <AB01> { [ x            , X             , ugrave               , Ugrave               ] };
     key <AB02> { [ c            , C             , ccedilla             , Ccedilla             ] };
-    key <AB03> { [ d            , D             , egrave               , Egrave              , eth, ETH ] };
+    key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH ] };
     key <AB04> { [ v            , V             , otilde               , Otilde               ] };
-    key <AB05> { [ z            , Z             , oe                   , OE                   ] };
+    key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH ] };
     //                                                                      REVERSED QUESTION MARK
     key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E ],
                  type[Group1] = "EIGHT_LEVEL" };
@@ -107,7 +109,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
     key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
     key <LCTL> { [ Shift_L, Caps_Lock ], type[Group1]="TWO_LEVEL" };
-    key <LALT> { [ Control_L ], type[Group1]="ONE_LEVEL" };
+    key <LALT> { [ Control_L, Meta_L ], type[Group1]="TWO_LEVEL" };
     key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
     key <RALT> { [ Shift_R, Caps_Lock ], type[Group1]="TWO_LEVEL" };
     key <RWIN> { [ ISO_Level3_Shift, ISO_Level5_Latch ], type[Group1]="PC_CONTROL_LEVEL2" };

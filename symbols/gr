@@ -6,10 +6,10 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     name[Group1] = "Greek (Colemak-DH Wide, American)";
 
     //                                            kai                    KAI
-    key <AE08> { [ 7            , ampersand     , U03D7                , U03CF        ], type[Group1] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
+    key <AE08> { [ 7            , ampersand     , U03D7                , U03CF                ], type[Group1] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     //             koppa          KOPPA           Archaic koppa          Archaic KOPPA
-    key <AD01> { [ U03DF        , U03DE         , U03D9                , U03D8        ] };
+    key <AD01> { [ U03DF        , U03DE         , U03D9                , U03D8                ] };
     key <AD02> { [ Greek_omega  , Greek_OMEGA   ] };
     key <AD03> { [ Greek_phi    , Greek_PHI     ] };
     key <AD04> { [ Greek_pi     , Greek_PI      ] };
@@ -22,30 +22,31 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AC01> { [ Greek_alpha  , Greek_ALPHA   ] };
     //                                            sho                    SHO
-    key <AC02> { [ Greek_rho    , Greek_RHO     , U03F8                , U03F7             ] };
-    key <AC03> { [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma, Greek_SIGMA       ] };
+    key <AC02> { [ Greek_rho    , Greek_RHO     , U03F8                , U03F7                ] };
+    key <AC03> { [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma, Greek_SIGMA          ] };
     //                                            stigma                 STIGMA
-    key <AC04> { [ Greek_tau    , Greek_TAU     , U03DB                , U03DA             ] };
+    key <AC04> { [ Greek_tau    , Greek_TAU     , U03DB                , U03DA                ] };
     //                                            digamma                DIGAMMA
-    key <AC05> { [ Greek_gamma  , Greek_GAMMA   , U03DD                , U03DC             ]};
+    key <AC05> { [ Greek_gamma  , Greek_GAMMA   , U03DD                , U03DC                ] };
     //                                            san                    SAN
-    key <AC07> { [ Greek_mu     , Greek_MU      , U03FB                , U03FA             ] };
+    key <AC07> { [ Greek_mu     , Greek_MU      , U03FB                , U03FA                ] };
     //                                            Pamphylian digamma     Pamphylian DIGAMMA
-    key <AC08> { [ Greek_nu     , Greek_NU      , U0377                , U0376             ] };
+    key <AC08> { [ Greek_nu     , Greek_NU      , U0377                , U0376                ] };
     key <AC09> { [ Greek_epsilon, Greek_EPSILON , ISO_First_Group] };
     key <AC10> { [ Greek_iota   , Greek_IOTA    , dead_iota ] };
     key <AC11> { [ Greek_omicron, Greek_OMICRON ] };
 
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
     key <LSGT> { [ Greek_zeta   , Greek_ZETA    ] };
-    key <AB01> { [ Greek_chi    , Greek_CHI     ] };
+    //                                            Reversed lunate sigma  Reversed lunate SIGMA
+    key <AB01> { [ Greek_chi    , Greek_CHI     , U037B                , U03FD                ] };
     //                                            Lunate sigma           Lunate SIGMA
-    key <AB02> { [ Greek_xi     , Greek_XI      , U03F2                , U03F9] };
+    key <AB02> { [ Greek_xi     , Greek_XI      , U03F2                , U03F9                ] };
     key <AB03> { [ Greek_delta  , Greek_DELTA   ] };
     //             sampi          SAMPI           Archaic sampi          Archaic SAMPI
-    key <AB04> { [ U03E1        , U03E0         , U0373                , U0372             ] };
+    key <AB04> { [ U03E1        , U03E0         , U0373                , U0372                ] };
     key <AB05> { [ Greek_zeta   , Greek_ZETA    ] };
     key <AB07> { [ Greek_kappa  , Greek_KAPPA   ] };
     //                                            heta                   HETA
-    key <AB08> { [ Greek_eta    , Greek_ETA     , U0371                , U0370             ] };
+    key <AB08> { [ Greek_eta    , Greek_ETA     , U0371                , U0370                ] };
 };
