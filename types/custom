@@ -161,4 +161,17 @@ default partial xkb_types "custom" {
         preserve[Shift+LevelThree+NumLock] = None;
         level_name[Level6] = "Shift AltGr Number";
     };
+
+    type "PC_CONTROL_LEVEL2_CONTRL+SHIFT_LEVEL3" {
+        modifiers = Shift + Control;
+        map[None] = Level1;
+        map[Shift] = Level1;
+        map[Control] = Level2;
+        map[Control+Shift] = Level3;
+        preserve[Shift] = Shift;
+        preserve[Control+Shift] = None;
+        level_name[Level1] = "Base";
+        level_name[Level2] = "Control";
+        level_name[Level3] = "Control Shift";
+    };
 };
