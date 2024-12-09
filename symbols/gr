@@ -5,6 +5,7 @@ xkb_symbols "colemak_dh_wide_am_gr" {
 
     name[Group1] = "Greek (Colemak-DH Wide, American)";
 
+    key <AE07> { [ NoSymbol     , NoSymbol      , ISO_First_Group      , NoSymbol             ] };
     //                                            kai                    KAI
     key <AE08> { [ NoSymbol     , NoSymbol      , U03D7                , U03CF                ], type[Group1] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
     //                                            Lower numeral sign
@@ -16,7 +17,7 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     key <AD03> { [ Greek_phi    , Greek_PHI     , Greek_upsilondieresis, Greek_UPSILONdieresis] };
     key <AD04> { [ Greek_pi     , Greek_PI      , Greek_iotadieresis   , Greek_IOTAdieresis   ] };
     key <AD05> { [ Greek_beta   , Greek_BETA    , dead_psili           ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
-    key <AD07> { [ Greek_psi    , Greek_PSI     , dead_iota            , ISO_First_Group ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AD07> { [ Greek_psi    , Greek_PSI     , dead_iota            ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
     key <AD08> { [ Greek_lambda , Greek_LAMBDA  , Greek_iotaaccentdieresis] };
     key <AD09> { [ Greek_theta  , Greek_THETA   , Greek_upsilonaccentdieresis] };
     key <AD10> { [ Greek_upsilon, Greek_UPSILON , Greek_upsilonaccent  , Greek_UPSILONaccent  ] };
