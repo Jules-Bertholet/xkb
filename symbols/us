@@ -34,8 +34,7 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ],
-                 [ ISO_First_Group   ] };
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
     //                                                                                         wynn   WYNN
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7 ] };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };

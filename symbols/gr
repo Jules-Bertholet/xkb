@@ -16,7 +16,8 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     key <AD02> { [ Greek_omega  , Greek_OMEGA   , Greek_omegaaccent    , Greek_OMEGAaccent    ] };
     key <AD03> { [ Greek_phi    , Greek_PHI     , Greek_upsilondieresis, Greek_UPSILONdieresis] };
     key <AD04> { [ Greek_pi     , Greek_PI      , Greek_iotadieresis   , Greek_IOTAdieresis   ] };
-    key <AD05> { [ Greek_beta   , Greek_BETA    , dead_psili           ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    //                                                                   Lunate epsilon
+    key <AD05> { [ Greek_beta   , Greek_BETA    , dead_psili           , U03F5                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
     key <AD07> { [ Greek_psi    , Greek_PSI     , dead_iota            ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
     key <AD08> { [ Greek_lambda , Greek_LAMBDA  , Greek_iotaaccentdieresis, Greek_IOTA        ] };
     key <AD09> { [ Greek_theta  , Greek_THETA   , Greek_upsilonaccentdieresis, Greek_UPSILON  ] };
@@ -46,7 +47,8 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     key <AB01> { [ Greek_chi    , Greek_CHI     , U037B                , U03FD                ] };
     //                                            Lunate sigma           Lunate SIGMA
     key <AB02> { [ Greek_xi     , Greek_XI      , U03F2                , U03F9                ] };
-    key <AB03> { [ Greek_delta  , Greek_DELTA   , dead_dasia ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    //                                                                   Reversed lunate epsilon
+    key <AB03> { [ Greek_delta  , Greek_DELTA   , dead_dasia           , U03F6                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
     //             sampi          SAMPI           Archaic sampi          Archaic SAMPI
     key <AB04> { [ U03E1        , U03E0         , U0373                , U0372                ] };
     //                                            Zero sign
