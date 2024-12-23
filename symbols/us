@@ -55,7 +55,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
 
     key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AC01> { [ a            , A             , aacute              , Aacute               ] };
+    key <AC01> { [ a            , A             , aacute              , Aacute               , ordfeminine ] };
     key <AC02> { [ r            , R             , agrave              , Agrave               ] };
     //                                                                                        Long S
     key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , S ] };
@@ -69,7 +69,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ] };
     key <AC09> { [ e            , E             , eacute              , Eacute              , schwa, SCHWA ] };
     key <AC10> { [ i            , I             , iacute              , Iacute              ] };
-    key <AC11> { [ o            , O             , oacute              , Oacute              ] };
+    key <AC11> { [ o            , O             , oacute              , Oacute              , ordmasculine ] };
 
     key <LSGT> { [ z            , Z             , oe                   , OE                   ] };
     key <AB01> { [ x            , X             , ugrave               , Ugrave               ] };

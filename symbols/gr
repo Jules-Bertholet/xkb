@@ -57,8 +57,14 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     //             sampi          SAMPI           Archaic sampi          Archaic SAMPI
     key <AB04> { [ U03E1        , U03E0         , U0373                , U0372                ] };
     //                                            sho                    SHO
-    key <AB05> { [ Greek_zeta   , Greek_ZETA    , U03F8                , U03F7                 ] };
+    key <AB05> { [ Greek_zeta   , Greek_ZETA    , U03F8                , U03F7                ] };
     //                                            heta                   HETA
     key <AB07> { [ Greek_kappa  , Greek_KAPPA   , U0371                , U0370                ] };
     key <AB08> { [ Greek_eta    , Greek_ETA     , Greek_etaaccent      , Greek_ETAaccent      ] };
+
+    key <RWIN> {
+        symbols[Group1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_First_Group    ],
+        actions[Group1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=1) ],
+        type[Group1]="PC_CONTROL_ALTGR"
+    };
 };
