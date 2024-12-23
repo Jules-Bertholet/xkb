@@ -16,15 +16,16 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                TRIPLE DAGGER
     key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash ] };
     key <AE04> { [ 4            , dollar        , cent                , dead_currency        ] };
-    key <AE05> { [ 5            , percent       , EuroSign            , permille             ] };
+    //                                                                                         PER TEN THOUSAND COMMERCIAL MINUS
+    key <AE05> { [ 5            , percent       , EuroSign            , permille             , U2031           , U2052 ] };
     //                                                                               CARET INSERTION POINT
     key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041 ] };
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
     key <AE07> { [ equal        , plus          , ISO_Group_Latch     , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
-    //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET
-    key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   ], type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
-    //                                                                                             ẞ LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM
-    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U1E9E, U204E      , U2051                          , U2042    ], type[Group1] = "EIGHT_LEVEL_35_SEMIALPHABETIC" };
+    //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET   PALM BRANCH
+    key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   , U2E19 ], type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
+    //                                                                                        LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM  FLORAL HEART ẞ
+    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U204E      , U2051                          , U2042    , U2766, U1E9E], type[Group1] = "EIGHT_LEVEL_PLUS_3_LOCK" };
     //                                                                                         Modifier letter tuned comma LEFT VERTICAL BAR WITH QUILL  LEFT SIDEWAYS U BRACKET LEFT DOUBLE PARENTHESIS
     key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB, U2E20                        ,  U2E26                 , U2E28 ] };
     //                                                                                        Modifier letter apostrophe  RIGHT VERTICAL BAR WITH QUILL  RIGHT SIDEWAYS U BRACKET  RIGHT DOUBLE PARENTHESIS

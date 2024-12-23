@@ -38,18 +38,18 @@ default partial xkb_types "custom" {
         level_name[Level8] = "X Shift AltGr";
     };
 
-    type "EIGHT_LEVEL_35_SEMIALPHABETIC" {
+    type "EIGHT_LEVEL_PLUS_3_LOCK" {
         modifiers = Shift + Lock + LevelThree + LevelFive;
         map[None] = Level1;
         map[Lock] = Level1;
         map[Shift] = Level2;
         map[Shift+Lock] = Level2;
         map[LevelThree] = Level3;
-        map[Lock+LevelThree] = Level5;
+        map[Lock+LevelThree] = 9;
         map[Shift+LevelThree] = Level4;
         map[Shift+Lock+LevelThree] = Level4;
         map[LevelFive] = Level5;
-        map[Lock+LevelFive] = Level3;
+        map[Lock+LevelFive] = Level5;
         map[Shift+LevelFive] = Level6;
         map[Shift+Lock+LevelFive] = Level6;
         map[LevelThree+LevelFive] = Level7;
@@ -60,7 +60,7 @@ default partial xkb_types "custom" {
         preserve[Shift+Lock] = Lock;
         preserve[Lock+LevelThree] = None;
         preserve[Shift+Lock+LevelThree] = Lock;
-        preserve[Lock+LevelFive] = None;
+        preserve[Lock+LevelFive] = Lock;
         preserve[Shift+Lock+LevelFive] = Lock;
         preserve[Lock+LevelThree+LevelFive] = Lock;
         preserve[Shift+Lock+LevelThree+LevelFive] = Lock;
@@ -72,6 +72,7 @@ default partial xkb_types "custom" {
         level_name[Level6] = "X Shift";
         level_name[Level7] = "X AltGr";
         level_name[Level8] = "X Shift AltGr";
+        level_name[9] = "Caps AltGr";
     };
 
     type "EIGHT_LEVEL_56_SEMIALPHABETIC" {
