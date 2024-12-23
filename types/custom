@@ -3,7 +3,7 @@ default partial xkb_types "custom" {
     virtual_modifiers LevelThree, LevelFive;
 
     type "EIGHT_LEVEL_34_SEMIALPHABETIC" {
-        modifiers = Shift + Lock + LevelThree + LevelFive + Alt;
+        modifiers = Shift + Lock + LevelThree + LevelFive;
         map[None] = Level1;
         map[Lock] = Level1;
         map[Shift] = Level2;
@@ -162,15 +162,13 @@ default partial xkb_types "custom" {
         level_name[Level6] = "Shift AltGr Number";
     };
 
-    type "PC_CONTROL_ALT" {
-        modifiers = Control + Alt;
+    type "PC_CONTROL_ALTGR" {
+        modifiers = Control + LevelThree;
         map[None] = Level1;
         map[Control] = Level2;
-        map[Alt] = Level3;
-        map[Control+Alt] = Level4;
+        map[LevelThree] = Level3;
         level_name[Level1] = "Base";
         level_name[Level2] = "Control";
-        level_name[Level3] = "Alt";
-        level_name[Level4] = "Control Alt";
+        level_name[Level3] = "AltGr";
     };
 };

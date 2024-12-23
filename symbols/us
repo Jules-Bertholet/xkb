@@ -109,30 +109,30 @@ xkb_symbols "colemak_dh_wide_am" {
     key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
     key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
     key <LCTL> {
-        symbols[Group1] = [ Shift_L                                     , Caps_Lock                ],
-        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false), LockMods(modifiers=Lock) ],
+        symbols[Group1] = [ Shift_L                                                     , Caps_Lock                ],
+        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
         type[Group1]="TWO_LEVEL"
     };
     key <LALT> {
-        symbols[Group1]=[ Control_L                                      ],
-        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=false) ],
+        symbols[Group1]=[ Control_L                                                     ],
+        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
         type[Group1]="ONE_LEVEL"
     };
     key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
     key <RALT> {
-        symbols[Group1] = [ Shift_R                                     , Caps_Lock                ],
-        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false), LockMods(modifiers=Lock) ],
+        symbols[Group1] = [ Shift_R                                                     , Caps_Lock                ],
+        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
         type[Group1]="TWO_LEVEL"
     };
     key <RWIN> {
-        symbols[Group1] = [ ISO_Level3_Latch                                 , ISO_Level5_Latch                                , ISO_Next_Group      ],
-        actions[Group1] = [ LatchMods(modifiers=LevelThree,latchToLock=false), LatchMods(modifiers=LevelFive,latchToLock=false), LockGroup(group=+1) ],
-        type[Group1]="PC_CONTROL_ALT"
+        symbols[Group1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group      ],
+        actions[Group1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=+1) ],
+        type[Group1]="PC_CONTROL_ALTGR"
     };
     key <MENU> { [ Super_R ], type[Group1]="ONE_LEVEL" };
     key <RCTL> {
-        symbols[Group1]=[ Control_R                    ],
-        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=false) ],
+        symbols[Group1]=[ Control_R                                                     ],
+        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
         type[Group1]="ONE_LEVEL"
     };
 
