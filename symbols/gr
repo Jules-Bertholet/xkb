@@ -11,56 +11,56 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     //                                            Lower numeral sign
     key <AE09> { [ NoSymbol     , NoSymbol      , U0375                      , NoSymbol             ], type[Group1] = "EIGHT_LEVEL" };
 
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[Group1] = "FOUR_LEVEL_ALPHABETIC_PLUS_MOD";
     //             koppa          KOPPA           Archaic koppa                Archaic KOPPA
-    key <AD01> { [ U03DF        , U03DE         , U03D9                      , U03D8                ] };
-    key <AD02> { [ Greek_omega  , Greek_OMEGA   , Greek_omegaaccent          , Greek_OMEGAaccent    ] };
+    key <AD01> { [ U03DF        , U03DE         , U03D9                      , U03D8                , q, Q ] };
+    key <AD02> { [ Greek_omega  , Greek_OMEGA   , Greek_omegaaccent          , Greek_OMEGAaccent    , w, W ] };
     //                                                                         phi Symbol
-    key <AD03> { [ Greek_phi    , Greek_PHI     , Greek_upsilonaccentdieresis, U03D5                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
-    key <AD04> { [ Greek_pi     , Greek_PI      , Greek_upsilondieresis      , Greek_UPSILONdieresis] };
+    key <AD03> { [ Greek_phi    , Greek_PHI     , Greek_upsilonaccentdieresis, U03D5                , f, F ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
+    key <AD04> { [ Greek_pi     , Greek_PI      , Greek_upsilondieresis      , Greek_UPSILONdieresis, p, P ] };
     //                                                                         beta Symbol
-    key <AD05> { [ Greek_beta   , Greek_BETA    , dead_psili                 , U03D0                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AD05> { [ Greek_beta   , Greek_BETA    , dead_psili                 , U03D0                , b, B ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
     //                                                                         kappa Symbol
-    key <AD07> { [ Greek_psi    , Greek_PSI     , dead_iota                  , U03F0                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AD07> { [ Greek_psi    , Greek_PSI     , dead_iota                  , U03F0                , j, J ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
     //                                                                         Lunate epsilon
-    key <AD08> { [ Greek_lambda , Greek_LAMBDA  , Greek_iotaaccentdieresis   , U03F5                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AD08> { [ Greek_lambda , Greek_LAMBDA  , Greek_iotaaccentdieresis   , U03F5                , l, L ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
     //                                            theta Symbol                 THETA Symbol
-    key <AD09> { [ Greek_theta  , Greek_THETA   , U03D1                      , U03F4                ] };
-    key <AD10> { [ Greek_upsilon, Greek_UPSILON , Greek_upsilonaccent        , Greek_UPSILONaccent  ] };
+    key <AD09> { [ Greek_theta  , Greek_THETA   , U03D1                      , U03F4                , u, U ] };
+    key <AD10> { [ Greek_upsilon, Greek_UPSILON , Greek_upsilonaccent        , Greek_UPSILONaccent  , y, Y ] };
 
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AC01> { [ Greek_alpha  , Greek_ALPHA   , Greek_alphaaccent          , Greek_ALPHAaccent    ] };
-    key <AC02> { [ Greek_rho    , Greek_RHO     , Greek_iotadieresis         , Greek_IOTAdieresis   ] };
+    key.type[Group1] = "FOUR_LEVEL_ALPHABETIC_PLUS_MOD";
+    key <AC01> { [ Greek_alpha  , Greek_ALPHA   , Greek_alphaaccent          , Greek_ALPHAaccent    , a, A ] };
+    key <AC02> { [ Greek_rho    , Greek_RHO     , Greek_iotadieresis         , Greek_IOTAdieresis   , r, R ] };
     //                                                                         rho Symbol
-    key <AC03> { [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma      , U03F1                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
+    key <AC03> { [ Greek_sigma  , Greek_SIGMA   , Greek_finalsmallsigma      , U03F1                , s, S ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
     //                                            stigma                       STIGMA
-    key <AC04> { [ Greek_tau    , Greek_TAU     , U03DB                      , U03DA                ] };
+    key <AC04> { [ Greek_tau    , Greek_TAU     , U03DB                      , U03DA                , t, T ] };
     //                                            digamma                      DIGAMMA
-    key <AC05> { [ Greek_gamma  , Greek_GAMMA   , U03DD                      , U03DC                ] };
+    key <AC05> { [ Greek_gamma  , Greek_GAMMA   , U03DD                      , U03DC                , g, G ] };
     //                                            san                          SAN
-    key <AC07> { [ Greek_mu     , Greek_MU      , U03FB                      , U03FA                ] };
+    key <AC07> { [ Greek_mu     , Greek_MU      , U03FB                      , U03FA                , m, M ] };
     //                                            Pamphylian digamma           Pamphylian DIGAMMA
-    key <AC08> { [ Greek_nu     , Greek_NU      , U0377                      , U0376                ] };
-    key <AC09> { [ Greek_epsilon, Greek_EPSILON , Greek_epsilonaccent        , Greek_EPSILONaccent  ] };
-    key <AC10> { [ Greek_iota   , Greek_IOTA    , Greek_iotaaccent           , Greek_IOTAaccent     ] };
-    key <AC11> { [ Greek_omicron, Greek_OMICRON , Greek_omicronaccent        , Greek_OMICRONaccent  ] };
+    key <AC08> { [ Greek_nu     , Greek_NU      , U0377                      , U0376                , n, N ] };
+    key <AC09> { [ Greek_epsilon, Greek_EPSILON , Greek_epsilonaccent        , Greek_EPSILONaccent  , e, E ] };
+    key <AC10> { [ Greek_iota   , Greek_IOTA    , Greek_iotaaccent           , Greek_IOTAaccent     , i, I ] };
+    key <AC11> { [ Greek_omicron, Greek_OMICRON , Greek_omicronaccent        , Greek_OMICRONaccent  , o, O ] };
 
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
-    //                                            Zero sign
-    key <LSGT> { [ Greek_zeta   , Greek_ZETA    , U1018A ] };
-    //                                            Reversed lunate sigma  Reversed lunate SIGMA
-    key <AB01> { [ Greek_chi    , Greek_CHI     , U037B                , U03FD                ] };
-    //                                            Lunate sigma           Lunate SIGMA
-    key <AB02> { [ Greek_xi     , Greek_XI      , U03F2                , U03F9                ] };
-    //                                                                   Reversed lunate epsilon
-    key <AB03> { [ Greek_delta  , Greek_DELTA   , dead_dasia           , U03F6                ], type[Group1] = "EIGHT_LEVEL_SEMIALPHABETIC" };
-    //             sampi          SAMPI           Archaic sampi          Archaic SAMPI
-    key <AB04> { [ U03E1        , U03E0         , U0373                , U0372                ] };
-    //                                            sho                    SHO
-    key <AB05> { [ Greek_zeta   , Greek_ZETA    , U03F8                , U03F7                ] };
-    //                                            heta                   HETA
-    key <AB07> { [ Greek_kappa  , Greek_KAPPA   , U0371                , U0370                ] };
-    key <AB08> { [ Greek_eta    , Greek_ETA     , Greek_etaaccent      , Greek_ETAaccent      ] };
+    key.type[Group1] = "FOUR_LEVEL_ALPHABETIC_PLUS_MOD";
+    //                                            sho                          SHO
+    key <AB05> { [ Greek_zeta   , Greek_ZETA    , U03F8                      , U03F7                , z, Z ] };
+    //                                            Reversed lunate sigma        Reversed lunate SIGMA
+    key <AB01> { [ Greek_chi    , Greek_CHI     , U037B                      , U03FD                , x, X ] };
+    //                                            Lunate sigma                 Lunate SIGMA
+    key <AB02> { [ Greek_xi     , Greek_XI      , U03F2                      , U03F9                , c, C ] };
+    //                                                                         Reversed lunate epsilon
+    key <AB03> { [ Greek_delta  , Greek_DELTA   , dead_dasia                 , U03F6                , d, D ], type[Group1] = "FOUR_LEVEL_SEMIALPHABETIC_PLUS_MOD" };
+    //             sampi          SAMPI           Archaic sampi                Archaic SAMPI
+    key <AB04> { [ U03E1        , U03E0         , U0373                      , U0372                , v, V ] };
+    //                                            sho                          SHO
+    key <AB05> { [ Greek_zeta   , Greek_ZETA    , U03F8                      , U03F7                , z, Z ] };
+    //                                            heta                         HETA
+    key <AB07> { [ Greek_kappa  , Greek_KAPPA   , U0371                      , U0370                , k, K ] };
+    key <AB08> { [ Greek_eta    , Greek_ETA     , Greek_etaaccent            , Greek_ETAaccent      , h, H ] };
 
     key <RWIN> {
         symbols[Group1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_First_Group    ],

@@ -1,0 +1,66 @@
+default partial alphanumeric_keys
+xkb_symbols "extend" {
+
+    include "us(colemak_dh_wide_am)"
+
+    name[1] = "Extend";
+
+    key.type[1] = "ONE_LEVEL";
+    key <AE01> { [ F1 ] };
+    key <AE02> { [ F2 ] };
+    key <AE03> { [ F3 ] };
+    key <AE04> { [ F4 ] };
+    key <AE05> { [ F5 ] };
+    key <AE06> { [ F6 ] };
+    key <AE07> { [ F12 ] };
+    key <AE08> { [ F7 ] };
+    key <AE09> { [ F8 ] };
+    key <AE10> { [ F9 ] };
+    key <AE11> { [ F10 ] };
+    key <AE12> { [ F11 ] };
+    key <BKSP> { [ Pause ] };
+
+    key.type[1] = "ONE_LEVEL";
+    key <AD01> { [ Escape ] };
+    key <AD02> { [ XF86ScrollUp ] };
+    key <AD03> { [ XF86Back ] };
+    key <AD04> { [ XF86Forward ] };
+    key <AD05> { [ Pointer_Up ] };
+    key <AD06> { [ Escape ] };
+    key <AD07> { [ Prior ] };
+    key <AD08> { [ Home ] };
+    key <AD09> { [ Up ] };
+    key <AD10> { [ End ] };
+    key <AD11> { [ Delete ] };
+    key <AD12> { [ Insert ] };
+    key <BKSL> { [ XF86Favorites ] };
+
+    key.type[1] = "ONE_LEVEL";
+    key <AC01> { [ Alt_L ] };
+    key <AC02> { [ XF86ScrollDown ] };
+    key <AC03> { [ Shift_L ] };
+    key <AC04> { [ Control_L ] };
+    key <AC05> { [ Pointer_Down ] };
+    key <AC06> { [ Insert ] };
+    key <AC07> { [ Next ] };
+    key <AC08> { [ Left ] };
+    key <AC09> { [ Down ] };
+    key <AC10> { [ Right ] };
+    key <AC11> { [ BackSpace ] };
+    key <RTRN> { [ Print ] };
+
+    key.type[1] = "ONE_LEVEL";
+    key <LSGT> { symbols[1] = [ z ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB01> { symbols[1] = [ x ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB02> { symbols[1] = [ c ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB03> { [ Pointer_Button1 ] };
+    key <AB04> { symbols[1] = [ v ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB05> { symbols[1] = [ z ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB06> { [ Multi_key ] };
+    key <AB07> { [ Pointer_Button2 ] };
+    key <AB08> { [ Pointer_Button3 ] };
+    key <AB09> { [ Pointer_Left ] };
+    key <AB10> { [ Pointer_Right ] };
+
+    key <SPCE> { [ Return ] };
+};
