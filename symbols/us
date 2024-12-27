@@ -3,11 +3,11 @@ xkb_symbols "colemak_dh_wide_am" {
 
     include "us(basic)"
 
-    name[Group1] = "English (Colemak-DH Wide, American)";
+    name[1] = "English (Colemak-DH Wide, American)";
 
     ///// Alphanumeric \\\\\
 
-    key.type[Group1] = "EIGHT_LEVEL";
+    key.type[1] = "EIGHT_LEVEL";
     //                                                                                SWUNG DASH WORD SEPARATOR MIDDLE DOT TWO-EM DASH THREE-EM DASH
     key <TLDE> { [ grave        , asciitilde    , dead_grave          , dead_tilde          , U2053, U2E31                   , U2E3A     , U2E3B        ] };
     //                                                                                  INTERROBANG INVERTED INTERROBANG  REVERSED PILCROW SIGN
@@ -23,9 +23,9 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
     key <AE07> { [ equal        , plus          , ISO_Group_Latch     , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
     //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET   PALM BRANCH
-    key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   , U2E19 ], type[Group1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
+    key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   , U2E19 ], type[1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
     //                                                                                        LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM  FLORAL HEART ẞ
-    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U204E      , U2051                          , U2042    , U2766, U1E9E], type[Group1] = "EIGHT_LEVEL_PLUS_3_LOCK" };
+    key <AE09> { [ 8            , asterisk      , ssharp              , section             , U204E      , U2051                          , U2042    , U2766, U1E9E], type[1] = "EIGHT_LEVEL_PLUS_3_LOCK" };
     //                                                                                         Modifier letter tuned comma LEFT VERTICAL BAR WITH QUILL  LEFT SIDEWAYS U BRACKET LEFT DOUBLE PARENTHESIS
     key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB, U2E20                        ,  U2E26                 , U2E28 ] };
     //                                                                                        Modifier letter apostrophe  RIGHT VERTICAL BAR WITH QUILL  RIGHT SIDEWAYS U BRACKET  RIGHT DOUBLE PARENTHESIS
@@ -34,7 +34,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
     //                                                                                         wynn   WYNN
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7 ] };
@@ -43,19 +43,19 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           ] };
     //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET LEFT SQUARE BRACKET WITH QUILL
     key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
-                 type[Group1] = "EIGHT_LEVEL" };
+                 type[1] = "EIGHT_LEVEL" };
     key <AD07> { [ j            , J             , ae                  , AE                   ] };
     key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           ] };
     key <AD09> { [ u            , U             , uacute              , uacute               ] };
     key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           ] };
-    key.type[Group1] = "EIGHT_LEVEL";
+    key.type[1] = "EIGHT_LEVEL";
     //                                                                                         Modifier letter prime
     key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9 ] };
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
     //                                                                                BULLET  DOUBLE VERTICAL LINE  HYPHEN BULLET
     key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
 
-    key.type[Group1] = "EIGHT_LEVEL_ALPHABETIC";
+    key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AC01> { [ a            , A             , aacute              , Aacute               , ordfeminine ] };
     key <AC02> { [ r            , R             , agrave              , Agrave               ] };
     //                                                                                        Long S
@@ -65,7 +65,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AC05> { [ g            , G             , aring               , Aring                , U201D, U201C ] };
     //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
     key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23                , U2046                          ],
-                 type[Group1] = "EIGHT_LEVEL" };
+                 type[1] = "EIGHT_LEVEL" };
     key <AC07> { [ m            , M             , oslash              , Oslash               ] };
     key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ] };
     key <AC09> { [ e            , E             , eacute              , Eacute              , schwa, SCHWA ] };
@@ -80,21 +80,21 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH ] };
     //                                                                      REVERSED QUESTION MARK
     key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E ],
-                 type[Group1] = "EIGHT_LEVEL" };
+                 type[1] = "EIGHT_LEVEL" };
     key <AB07> { [ k            , K             , icircumflex          , Icircumflex          ] };
     key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          ] };
-    key.type[Group1] = "EIGHT_LEVEL";
+    key.type[1] = "EIGHT_LEVEL";
     key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          ] };
     key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        ] };
 
     //                                                                                NNBSP  THIN SPACE
     key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009     ],
-                 type[Group1]="EIGHT_LEVEL" };
+                 type[1]="EIGHT_LEVEL" };
 
 
     ///// Arrow \\\\\
 
-    key.type[Group1] = "SEVEN_LEVEL";
+    key.type[1] = "SEVEN_LEVEL";
     //                                                                     UP DOWN ARROW  UPWARDS ARROW LEFTWARDS OF DOWNWARDS ARROW  NORTH EAST ARROW     LEFTWARDS ARROW WITH TIP UPWARDS    RIGHTWARDS ARROW WITH TIP UPWARDS
     key <UP>   { [ Up                      , uparrow              , U2195               , U21C5                                     , U2197           , U2B11                              , U2B0F                               ] };
     //                                                   ANTICLOCKWISE OPEN CIRCLE ARROW       LEFTWARDS ARROW OVER RIGHTWARDS ARROW  NORTH WEST ARROW   DOWNWARDS ARROW WITH TIP LEFTWARDS     UPWARDS ARROW WITH TIP LEFTWARDS
@@ -107,56 +107,60 @@ xkb_symbols "colemak_dh_wide_am" {
 
     ///// Modifier \\\\\
 
-    key <CAPS> { [ Caps_Lock ], type[Group1] = "ONE_LEVEL" };
-    key <LFSH> { [ Alt_L ], type[Group1]="ONE_LEVEL" };
+    key <CAPS> {
+        symbols[1] = [ Mode_switch ],
+        actions[1] = [ SetGroup(group=2) ],
+        type[1] = "ONE_LEVEL"
+    };
+    key <LFSH> { [ Alt_L ], type[1]="ONE_LEVEL" };
     key <LCTL> {
-        symbols[Group1] = [ Shift_L                                                     , Caps_Lock                ],
-        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
-        type[Group1]="TWO_LEVEL"
+        symbols[1] = [ Shift_L                                                     , Caps_Lock                ],
+        actions[1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
+        type[1]="TWO_LEVEL"
     };
     key <LALT> {
-        symbols[Group1]=[ Control_L                                                     ],
-        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
-        type[Group1]="ONE_LEVEL"
+        symbols[1]=[ Control_L                                                     ],
+        actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        type[1]="ONE_LEVEL"
     };
-    key <RTSH> { [ Menu, Multi_key ], type[Group1]="SEVEN_LEVEL" };
+    key <RTSH> { [ Menu, Multi_key ], type[1]="SEVEN_LEVEL" };
     key <RALT> {
-        symbols[Group1] = [ Shift_R                                                     , Caps_Lock                ],
-        actions[Group1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
-        type[Group1]="TWO_LEVEL"
+        symbols[1] = [ Shift_R                                                     , Caps_Lock                ],
+        actions[1] = [ LatchMods(modifiers=Shift,latchToLock=false,clearLocks=true), LockMods(modifiers=Lock) ],
+        type[1]="TWO_LEVEL"
     };
     key <RWIN> {
-        symbols[Group1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group      ],
-        actions[Group1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=+1) ],
-        type[Group1]="PC_CONTROL_ALTGR"
+        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group      ],
+        actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=3) ],
+        type[1]="PC_CONTROL_ALTGR"
     };
-    key <MENU> { [ Super_R ], type[Group1]="ONE_LEVEL" };
+    key <MENU> { [ Super_R ], type[1]="ONE_LEVEL" };
     key <RCTL> {
-        symbols[Group1]=[ Control_R                                                     ],
-        actions[Group1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
-        type[Group1]="ONE_LEVEL"
+        symbols[1]=[ Control_R                                                     ],
+        actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        type[1]="ONE_LEVEL"
     };
 
 
     ///// Keypad \\\\\
 
-    key <KPEN> { [ KP_Enter ], type[Group1]="ONE_LEVEL" };
-    key <NMLK> { [ Num_Lock ], type[Group1]="ONE_LEVEL" };
+    key <KPEN> { [ KP_Enter ], type[1]="ONE_LEVEL" };
+    key <NMLK> { [ Num_Lock ], type[1]="ONE_LEVEL" };
 
-    key.type[Group1] = "KEYPAD_ALTGR";
+    key.type[1] = "KEYPAD_ALTGR";
     key <KP7>  { [ KP_Home       , U2196         , KP_7       , NoSymbol    , NoSymbol   , NoSymbol   ] };
     key <KP8>  { [ KP_Up         , uparrow       , KP_8       , NoSymbol    , NoSymbol   , NoSymbol   ] };
     key <KP9>  { [ KP_Prior      , U2179         , KP_9       , NoSymbol    , NoSymbol   , NoSymbol   ] };
     key <KPDV> { [ NoSymbol      , NoSymbol      , KP_Divide  , percent     , division   , NoSymbol   ] };
 
-    key <I187> { [ {Control_L, c}, {Control_L, x}, parenleft  , colon       , bracketleft , braceleft  ], type[Group1] = "KEYPAD_ALTGR" };
+    key <I187> { [ {Control_L, c}, {Control_L, x}, parenleft  , colon       , bracketleft , braceleft  ], type[1] = "KEYPAD_ALTGR" };
     key <KP4>  { [ KP_Left       , leftarrow     , KP_4       , UFDE4       , d           , D          ] };
     key <KP5>  { [ KP_Down       , downarrow     , KP_5       , UFDE5       , e           , E          ] };
     key <KP6>  { [ KP_Right      , rightarrow    , KP_6       , UFDE6       , f           , F          ] };
     //                                                                                      DOT OPERATOR
     key <KPMU> { [ Scroll_Lock   , NoSymbol      , KP_Multiply, asciicircum , multiply    , U22C5      ] };
 
-    key <I188> { [ {Control_L, v}, NoSymbol      , parenright , semicolon   , bracketright, braceright ], type[Group1] = "KEYPAD_ALTGR" };
+    key <I188> { [ {Control_L, v}, NoSymbol      , parenright , semicolon   , bracketright, braceright ], type[1] = "KEYPAD_ALTGR" };
     key <KP1>  { [ KP_End        , U2199         , KP_1       , numbersign  , a           , A          ] };
     key <KP2>  { [ KP_Begin      , NoSymbol      , KP_2       , NoSymbol    , b           , B          ] };
     key <KP3>  { [ KP_Next       , U2198         , KP_3       , NoSymbol    , c           , C          ] };

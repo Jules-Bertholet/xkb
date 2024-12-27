@@ -44,5 +44,12 @@
         </variant>
       </variantList>
     </layout>
+    <layout>
+      <configItem>
+        <name>extend</name>
+        <shortDescription>ext</shortDescription>
+        <description>Extend</description>
+      </configItem>
+    </layout>
   </layoutList>
 </xkbConfigRegistry>
