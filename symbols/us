@@ -110,7 +110,7 @@ xkb_symbols "colemak_dh_wide_am" {
     ///// Modifier \\\\\
 
     key <CAPS> {
-        symbols[1] = [ Mode_switch ],
+        symbols[1] = [ Mode_switch       ],
         actions[1] = [ SetGroup(group=2) ],
         type[1] = "ONE_LEVEL"
     };
@@ -122,7 +122,7 @@ xkb_symbols "colemak_dh_wide_am" {
     };
     key <LALT> {
         symbols[1]=[ Control_L                                                     ],
-        actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        //actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
         type[1]="ONE_LEVEL"
     };
     key <RTSH> { [ Menu, Multi_key ], type[1]="SEVEN_LEVEL" };
@@ -132,14 +132,14 @@ xkb_symbols "colemak_dh_wide_am" {
         type[1]="TWO_LEVEL"
     };
     key <RWIN> {
-        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group      ],
+        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group     ],
         actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=3) ],
         type[1]="PC_CONTROL_ALTGR"
     };
     key <MENU> { [ Super_R ], type[1]="ONE_LEVEL" };
     key <RCTL> {
         symbols[1]=[ Control_R                                                     ],
-        actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        //actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
         type[1]="ONE_LEVEL"
     };
 
