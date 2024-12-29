@@ -17,7 +17,7 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash ] };
     key <AE04> { [ 4            , dollar        , cent                , dead_currency        ] };
     //                                                                                         PER TEN THOUSAND COMMERCIAL MINUS
-    key <AE05> { [ 5            , percent       , EuroSign            , permille             , U2031           , U2052 ] };
+    key <AE05> { [ 5            , percent       , EuroSign            , permille            , U2031           , U2052 ] };
     //                                                                               CARET INSERTION POINT
     key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041 ] };
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
@@ -26,10 +26,10 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE08> { [ 7            , ampersand     , doublelowquotemark  , singlelowquotemark  , U204A, U2E52                   , U2E19 ], type[1] = "EIGHT_LEVEL_56_SEMIALPHABETIC" };
     //                                                                                        LOW ASTERISK TWO ASTERISKS ALIGNED VERTICALLY  ASTERISM  FLORAL HEART ẞ
     key <AE09> { [ 8            , asterisk      , ssharp              , section             , U204E      , U2051                          , U2042    , U2766, U1E9E], type[1] = "EIGHT_LEVEL_PLUS_3_LOCK" };
-    //                                                                                         Modifier letter tuned comma LEFT VERTICAL BAR WITH QUILL  LEFT SIDEWAYS U BRACKET LEFT DOUBLE PARENTHESIS
-    key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB, U2E20                        ,  U2E26                 , U2E28 ] };
-    //                                                                                        Modifier letter apostrophe  RIGHT VERTICAL BAR WITH QUILL  RIGHT SIDEWAYS U BRACKET  RIGHT DOUBLE PARENTHESIS
-    key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U02BC                     , U2E21                        , U2E27                   , U2E29] };
+    //                                                                                         Modifier letter tuned comma  LEFT FLATTENED PARENTHESIS   LEFT SIDEWAYS U BRACKET    LEFT VERTICAL BAR WITH QUILL
+    key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB                 , U27EE       ,  U2E26                  , U2E20 ] };
+    //                                                                                        Modifier letter apostrophe RIGHT FLATTENED PARENTHESIS  RIGHT SIDEWAYS U BRACKET  RIGHT VERTICAL BAR WITH QUILL
+    key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U02BC                      , U27EF                     , U2E27                  , U2E21     ] };
     //                                                                                       HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
     key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
 
@@ -41,8 +41,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
     key <AD04> { [ p            , P             , acircumflex         , Acircumflex          ] };
     key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           ] };
-    //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET LEFT SQUARE BRACKET WITH QUILL
-    key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         ],
+    //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET  LEFT SQUARE BRACKET WITH QUILL  ORNATE LEFT PARENTHESIS
+    key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         , UFD3E ],
                  type[1] = "EIGHT_LEVEL" };
     key <AD07> { [ j            , J             , ae                  , AE                   ] };
     key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           ] };
@@ -52,8 +52,8 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                         Modifier letter prime
     key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9 ] };
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
-    //                                                                                BULLET  DOUBLE VERTICAL LINE  HYPHEN BULLET
-    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2016    , U2043         ] };
+    //                                                                                       BULLET    HYPHEN BULLET
+    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2043         ] };
 
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AC01> { [ a            , A             , aacute              , Aacute               , ordfeminine ] };
@@ -63,8 +63,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN ] };
     //                                                                                         yogh   YOGH
     key <AC05> { [ g            , G             , aring               , Aring                , U201D, U201C ] };
-    //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL
-    key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23                , U2046                          ],
+    //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL  ORNATE RIGHT PARENTHESIS
+    key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23,              U2046                          ,  UFD3F],
                  type[1] = "EIGHT_LEVEL" };
     key <AC07> { [ m            , M             , oslash              , Oslash               ] };
     key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ] };
@@ -84,8 +84,10 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB07> { [ k            , K             , icircumflex          , Icircumflex          ] };
     key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          ] };
     key.type[1] = "EIGHT_LEVEL";
-    key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          ] };
-    key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        ] };
+    //                                                                                          LEFT ANGLE BRACKET
+    key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          , U27E8] };
+    //                                                                                          RIGHT ANGLE BRACKET
+    key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        , U27E9] };
 
     //                                                                                NNBSP  THIN SPACE
     key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009     ],

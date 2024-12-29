@@ -7,7 +7,7 @@ xkb_symbols "colemak_dh_wide_am_gr" {
 
     key <AE07> { [ NoSymbol     , NoSymbol      , mu                         , NoSymbol             ] };
     //                                            kai                          KAI
-    key <AE08> { [ NoSymbol     , NoSymbol      , U03D7                      , U03CF                ], type[1] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
+    key <AE08> { [ NoSymbol     , NoSymbol      , U03D7                      , U03CF                , doublelowquotemark, singlelowquotemark ], type[1] = "EIGHT_LEVEL_34_SEMIALPHABETIC" };
     //                                            Lower numeral sign
     key <AE09> { [ NoSymbol     , NoSymbol      , U0375                      , NoSymbol             ], type[1] = "EIGHT_LEVEL" };
 
