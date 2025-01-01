@@ -18,7 +18,7 @@ xkb_symbols "extend" {
     key <AE10> { [ F9 ] };
     key <AE11> { [ F10 ] };
     key <AE12> { [ F11 ] };
-    key <BKSP> { [ Pause ] };
+    key <BKSP> { [ Pause, Break ], type[1] = "PC_CONTROL_LEVEL2" };
 
     key.type[1] = "ONE_LEVEL";
     key <AD01> { [ Escape ] };
