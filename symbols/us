@@ -35,30 +35,32 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
-    //                                                                                         wynn   WYNN
-    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7 ] };
+    //                                                                                         saltillo  SALTILLO
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , UA78C   , UA78B   ] };
+    //                                                                                         wynn   WYNN   Latin omega  Latin OMEGA
+    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7, UA7B7      , UA7B6      ] };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
-    key <AD04> { [ p            , P             , acircumflex         , Acircumflex          ] };
-    //                                                                                         Latin beta  Latin BETA
-    key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           , UA7B5     , UA7B4 ] };
+    //                                                                                         glottal stop  GLOTTAL STOP
+    key <AD04> { [ p            , P             , acircumflex         , Acircumflex          , U0242       , U0241       ] };
+    //                                                                                         Latin beta  Latin BETA  gha    GHA
+    key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           , UA7B5     , UA7B4     , U01A3, U01A2 ] };
     //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET  LEFT SQUARE BRACKET WITH QUILL  ORNATE LEFT PARENTHESIS
     key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         , UFD3E ],
                  type[1] = "EIGHT_LEVEL" };
-    //                                                                                         glottal stop  GLOTTAL STOP  saltillo  SALTILLO
-    key <AD07> { [ j            , J             , ae                  , AE                   , U0242       , U0241       , UA78C   , UA78B ] };
-    //                                                                                         Latin lambda  Latin LAMBDA
-    key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           , UA7DB       , UA7DA] };
-    //                                                                                         Latin upsilon  Latin UPSILON
-    key <AD09> { [ u            , U             , uacute              , uacute               , U028A        , U01B1 ] };
-    //                                                                                         ram's horn  RAM'S HORN
-    key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           , U0264     , UA7CB] };
+    //                                                                                         j with crossed-tail  J with crossed-tail
+    key <AD07> { [ j            , J             , ae                  , AE                   , U029D              , UA7B2              ] };
+    //                                                                                         l with bar  L with bar  l with belt  L with belt
+    key <AD08> { [ l            , L             , idiaeresis          , Idiaeresis           , U019A     , U023D     , U026C      , UA7AD] };
+    //                                                                                         u with stroke  U with stroke  Latin upsilon  Latin UPSILON
+    key <AD09> { [ u            , U             , uacute              , uacute               , UA7B9        , UA7B8        , U028A        , U01B1        ] };
+    //                                                                                         ram's horn  RAM'S HORN  Latin lambda  Latin LAMBDA
+    key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           , U0264     , UA7CB     , UA7DB       , UA7DA       ] };
     key.type[1] = "EIGHT_LEVEL";
     //                                                                                         Modifier letter prime
     key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9 ] };
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
-    //                                                                                       BULLET    HYPHEN BULLET
-    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , brokenbar, U2043         ] };
+    //                                                                  BULLET                WHITE BULLET             Dental click  Lateral click
+    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , U25E6       , brokenbar, U01C0       , U01C1        ] };
 
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     //                                                                                         Latin alpha  Latin ALPHA
@@ -67,7 +69,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AC02> { [ r            , R             , agrave              , Agrave               , U0280, R] };
     //                                                                                        Long s         esh    ESH
     key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , U017F, U0283, U01A9 ] };
-    key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN ] };
+    //                                                                                                      t with diagonal stroke  T with diagonal stroke
+    key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN, U2C66                 , U023E                 ] };
     //                                                                                         yogh   YOGH   Latin gamma  latin GAMMA
     key <AC05> { [ g            , G             , aring               , Aring                , U201D, U201C, U0263      , U0194 ] };
     //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL  ORNATE RIGHT PARENTHESIS
@@ -75,29 +78,34 @@ xkb_symbols "colemak_dh_wide_am" {
                  type[1] = "EIGHT_LEVEL" };
     //                                                                                        Turned m  turned M
     key <AC07> { [ m            , M             , oslash              , Oslash              , U026F   , U019C ] };
-    key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG ] };
+    //                                                                                                  Open e  Open E
+    key <AC08> { [ n            , N             , ntilde              , Ntilde              , eng, ENG, U025B , U0190 ] };
     //                                                                                                      Reversed e  Reversed E
     key <AC09> { [ e            , E             , eacute              , Eacute              , schwa, SCHWA, U01DD     , U018E     ] };
-    //                                                                                        Latin iota  Latin IOTA  Open e  Open E
-    key <AC10> { [ i            , I             , iacute              , Iacute              , U0269     , U0196     , U025B , U0190 ] };
-    //                                                                                         Barred o  Barred O
-    key <AC11> { [ o            , O             , oacute              , Oacute               , U0275   , U019F   , ordmasculine ] };
+    //                                                                                        Latin iota  Latin IOTA  Small capital i  Small capital I
+    key <AC10> { [ i            , I             , iacute              , Iacute              , U0269     , U0196     , U026A          , UA7AE          ] };
+    //                                                                                         Barred o  Barred O  ou     OU
+    key <AC11> { [ o            , O             , oacute              , Oacute               , U0275   , U019F   , U0223, U0222 ] };
 
-    key <LSGT> { [ z            , Z             , oe                   , OE                   , ezh, EZH ] };
-    key <AB01> { [ x            , X             , ugrave               , Ugrave               ] };
-    //                                                                                          Open o  Open O
-    key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 ] };
-    key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH ] };
+    //                                                                                                    z with descender  Z with descender
+    key <LSGT> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
+    //                                                                                          Latin chi  Latin CHI
+    key <AB01> { [ x            , X             , ugrave               , Ugrave               , UAB53    , UA7B3] };
+    //                                                                                          Open o  Open O  c with bar  C with bar
+    key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 , UA793     , UA792     ] };
+    //                                                                                                    d with tail  African D
+    key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH, U0256      , U0189    ] };
     //                                                                                          turned v  turned V
     key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245] };
-    key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH ] };
-    //                                                                      REVERSED QUESTION MARK     Glottal stop
-    key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294 ],
+    //                                                                                                    z with descender  Z with descender
+    key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
+    //                                                                      REVERSED QUESTION MARK     Glottal stop  Alveolar click  Retroflex click
+    key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294       , U01C2         , U01C3          ],
                  type[1] = "EIGHT_LEVEL" };
-    //                                                                                          kra    KRA
-    key <AB07> { [ k            , K             , icircumflex          , Icircumflex          , U0138, { K, U02BC } ] };
-    //                                                                                          turned h  turned H
-    key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          , U0265   , UA78D ] };
+    //                                                                                          kra    KRA           k with descender  K with descender
+    key <AB07> { [ k            , K             , icircumflex          , Icircumflex          , U0138, { K, U02BC }, U2C6A           , U2C69           ] };
+    //                                                                                          turned h  turned H  h with descender  H with descender
+    key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          , U0265   , UA78D   , U2C68           , U2C67           ] };
     key.type[1] = "EIGHT_LEVEL";
     //                                                                                          LEFT ANGLE BRACKET
     key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          , U27E8] };
