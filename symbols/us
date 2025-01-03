@@ -155,9 +155,9 @@ xkb_symbols "colemak_dh_wide_am" {
         type[1]="TWO_LEVEL"
     };
     key <RWIN> {
-        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group     ],
-        actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=3) ],
-        type[1]="PC_CONTROL_ALTGR"
+        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_Next_Group    , Alt_R                                                     ],
+        actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=3), LatchMods(modifiers=Alt,latchToLock=false,clearLocks=true)],
+        type[1]="PC_CONTROL_ALT_ALTGR"
     };
     key <MENU> {
         symbols[1] = [ Super_R                                                      ],

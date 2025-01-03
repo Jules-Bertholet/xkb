@@ -63,8 +63,8 @@ xkb_symbols "colemak_dh_wide_am_gr" {
     key <AB08> { [ Greek_eta    , Greek_ETA     , Greek_etaaccent            , Greek_ETAaccent      , h, H ] };
 
     key <RWIN> {
-        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_First_Group    ],
-        actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=1) ],
-        type[1]="PC_CONTROL_ALTGR"
+        symbols[1] = [ ISO_Level3_Latch                                                 , ISO_Level5_Latch                                                , ISO_First_Group   , Alt_R                                                      ],
+        actions[1] = [ LatchMods(modifiers=LevelThree,latchToLock=false,clearLocks=true), LatchMods(modifiers=LevelFive,latchToLock=false,clearLocks=true), LockGroup(group=1), LatchMods(modifiers=Alt,latchToLock=false,clearLocks=true) ],
+        type[1]="PC_CONTROL_ALT_ALTGR"
     };
 };

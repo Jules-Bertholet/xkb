@@ -163,14 +163,16 @@ default partial xkb_types "custom" {
         level_name[6] = "Shift AltGr Number";
     };
 
-    type "PC_CONTROL_ALTGR" {
-        modifiers = Control + LevelThree;
+    type "PC_CONTROL_ALT_ALTGR" {
+        modifiers = Control + Alt + LevelThree;
         map[None] = 1;
         map[Control] = 2;
         map[LevelThree] = 3;
+        map[Alt] = 4;
         level_name[1] = "Base";
         level_name[2] = "Control";
         level_name[3] = "AltGr";
+        level_name[4] = "Alt";
     };
 
     type "FOUR_LEVEL_ALPHABETIC_PLUS_MOD" {
