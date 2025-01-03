@@ -8,18 +8,18 @@ xkb_symbols "colemak_dh_wide_am" {
     ///// Alphanumeric \\\\\
 
     key.type[1] = "EIGHT_LEVEL";
-    //                                                                                SWUNG DASH WORD SEPARATOR MIDDLE DOT TWO-EM DASH THREE-EM DASH
-    key <TLDE> { [ grave        , asciitilde    , dead_grave          , dead_tilde          , U2053, U2E31                   , U2E3A     , U2E3B        ] };
-    //                                                                                  INTERROBANG INVERTED INTERROBANG  REVERSED PILCROW SIGN
-    key <AE01> { [ 1            , exclam        , exclamdown          , paragraph           , U203D, U2E18              , U204B                 ] };
-    key <AE02> { [ 2            , at            , degree              , dead_abovering      , copyright, registered ] };
-    //                                                                                TRIPLE DAGGER
-    key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash ] };
+    //                                                                                        SWUNG DASH                   TWO-EM DASH  THREE-EM DASH
+    key <TLDE> { [ grave        , asciitilde    , dead_grave          , dead_tilde          , U2053     , dead_belowtilde, U2E3A      , U2E3B        ] };
+    //                                                                                  INTERROBANG INVERTED INTERROBANG  Retroflex click  REVERSED PILCROW SIGN
+    key <AE01> { [ 1            , exclam        , exclamdown          , paragraph           , U203D, U2E18              , U01C3          , U204B                 ] };
+    key <AE02> { [ 2            , at            , degree              , dead_abovering      , copyright, registered, dead_belowring, phonographcopyright ] };
+    //                                                                                TRIPLE DAGGER           Alveolar click
+    key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash, U01C2         ] };
     key <AE04> { [ 4            , dollar        , cent                , dead_currency        ] };
     //                                                                                         PER TEN THOUSAND COMMERCIAL MINUS
     key <AE05> { [ 5            , percent       , EuroSign            , permille            , U2031           , U2052 ] };
     //                                                                               CARET INSERTION POINT
-    key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041 ] };
+    key <AE06> { [ 6            , asciicircum   , dead_circumflex     , dead_caron          , caret, U2041, dead_belowcircumflex ] };
     //                                                                            HYPHENATION POINT DOUBLE HYPHEN  OBLIQUE HYPHEN DOUBLE OBLIQUE HYPHEN
     key <AE07> { [ equal        , plus          , ISO_Group_Latch     , NoSymbol            , U2027, U2E40       , U2E5D        , U2E17                 ] };
     //                                                                             TIRONIAN SIGN ET TIRONIAN SIGN CAPITAL ET   PALM BRANCH
@@ -30,8 +30,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE10> { [ 9            , parenleft     , leftdoublequotemark , leftsinglequotemark , U20BB                 , U27EE       ,  U2E26                  , U2E20 ] };
     //                                                                                        Modifier letter apostrophe RIGHT FLATTENED PARENTHESIS  RIGHT SIDEWAYS U BRACKET  RIGHT VERTICAL BAR WITH QUILL
     key <AE11> { [ 0            , parenright    , rightdoublequotemark, rightsinglequotemark, U02BC                      , U27EF                     , U2E27                  , U2E21     ] };
-    //                                                                                       HYPHEN  NON-BREAKING HYPHEN HORIZONTAL BAR SOFT HYPHEN
-    key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , hyphen     ] };
+    //                                                                                       HYPHEN  NON-BREAKING HYPHEN  HORIZONTAL BAR
+    key <AE12> { [ minus        , underscore    , endash              , emdash              , U2010, U2011              , U2015        , overline     ] };
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
@@ -57,8 +57,9 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           , U0264     , UA7CB     , UA7DB       , UA7DA       ] };
     key.type[1] = "EIGHT_LEVEL";
     //                                                                                         Modifier letter prime
-    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9 ] };
-    key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           ] };
+    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9                , dead_belowmacron, dead_horn ] };
+    //                                                                                                                              Combining vertical line above  Combining double vertical line above
+    key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           , dead_belowbreve, dead_invertedbreve, U030D                        , U030E ] };
     //                                                                  BULLET                WHITE BULLET             Dental click  Lateral click
     key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , U25E6       , brokenbar, U01C0       , U01C1        ] };
 
@@ -99,21 +100,21 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245] };
     //                                                                                                    z with descender  Z with descender
     key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
-    //                                                                      REVERSED QUESTION MARK     Glottal stop  Alveolar click  Retroflex click
-    key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294       , U01C2         , U01C3          ],
+    //                                                                      REVERSED QUESTION MARK     Glottal stop  Pharyngeal voiced fricative
+    key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294       , U0295                      ],
                  type[1] = "EIGHT_LEVEL" };
     //                                                                                          kra    KRA           k with descender  K with descender
     key <AB07> { [ k            , K             , icircumflex          , Icircumflex          , U0138, { K, U02BC }, U2C6A           , U2C69           ] };
     //                                                                                          turned h  turned H  h with descender  H with descender
     key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          , U0265   , UA78D   , U2C68           , U2C67           ] };
     key.type[1] = "EIGHT_LEVEL";
-    //                                                                                          LEFT ANGLE BRACKET
-    key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          , U27E8] };
-    //                                                                                          RIGHT ANGLE BRACKET
-    key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        , U27E9] };
+    //                                                                                          LEFT ANGLE BRACKET             Combining comma above  Combining comma above right
+    key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek          , U27E8             , dead_hook, U0313                , U0315] };
+    //                                                                                          RIGHT ANGLE BRACKET                 Word separator middle dot  Combining dot above right
+    key <AB10> { [ period       , greater       , ellipsis             , dead_abovedot        , U27E9              , dead_belowdot, U2E31                    , U0358] };
 
-    //                                                                                NNBSP  THIN SPACE
-    key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009     ],
+    //                                                                                NNBSP   THIN SPACE
+    key <SPCE> { [ space        , space         , nobreakspace         , U202F               , U2009    , hyphen],
                  type[1]="EIGHT_LEVEL" };
 
 
