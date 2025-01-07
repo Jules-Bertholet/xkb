@@ -50,12 +50,12 @@ xkb_symbols "extend" {
     key <RTRN> { [ Print ] };
 
     key.type[1] = "ONE_LEVEL";
-    key <LSGT> { symbols[1] = [ z ], actions[1] = [ SetMods(modifiers=Control) ] };
-    key <AB01> { symbols[1] = [ x ], actions[1] = [ SetMods(modifiers=Control) ] };
-    key <AB02> { symbols[1] = [ c ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <LSGT> { [ Undo ] };
+    key <AB01> { [ XF86Cut ] };
+    key <AB02> { [ XF86Copy ] };
     key <AB03> { [ Pointer_Button1 ] };
-    key <AB04> { symbols[1] = [ v ], actions[1] = [ SetMods(modifiers=Control) ] };
-    key <AB05> { symbols[1] = [ z ], actions[1] = [ SetMods(modifiers=Control) ] };
+    key <AB04> { [ XF86Paste ] };
+    key <AB05> { [ Undo ] };
     key <AB06> { [ Multi_key ] };
     key <AB07> { [ Pointer_Button2 ] };
     key <AB08> { [ Pointer_Button3 ] };
