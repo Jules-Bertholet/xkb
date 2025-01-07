@@ -145,8 +145,8 @@ xkb_symbols "colemak_dh_wide_am" {
         type[1]="TWO_LEVEL"
     };
     key <LALT> {
-        symbols[1]=[ Control_L                                                     ],
-        //actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        symbols[1]=[ Control_L                                                      ],
+        actions[1]=[ LatchMods(modifiers=Control,latchToLock=false,clearLocks=true) ],
         type[1]="ONE_LEVEL"
     };
     key <RTSH> { [ Menu, Multi_key ], type[1]="SEVEN_LEVEL" };
@@ -166,8 +166,8 @@ xkb_symbols "colemak_dh_wide_am" {
         type[1]="ONE_LEVEL"
     };
     key <RCTL> {
-        symbols[1]=[ Control_R                                                     ],
-        //actions[1]=[ LatchMods(modifiers=Control,latchToLock=true,clearLocks=true) ],
+        symbols[1]=[ Control_R                                                      ],
+        actions[1]=[ LatchMods(modifiers=Control,latchToLock=false,clearLocks=true) ],
         type[1]="ONE_LEVEL"
     };
 
