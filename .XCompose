@@ -1,0 +1,316 @@
+# numpad
+
+<UFDE4> <KP_1>          : "a" a
+<UFDE4> <KP_2>          : "b" b
+<UFDE4> <KP_3>          : "c" c
+<UFDE4> <KP_4>          : "d" d
+<UFDE4> <KP_5>          : "e" e
+<UFDE4> <KP_6>          : "f" f
+<UFDE4> <KP_7>          : "g" g
+<UFDE4> <KP_8>          : "h" h
+
+<UFDE5> <KP_1>          : "i" i
+<UFDE5> <KP_2>          : "j" j
+<UFDE5> <KP_3>          : "k" k
+<UFDE5> <KP_4>          : "l" l
+<UFDE5> <KP_5>          : "m" m
+<UFDE5> <KP_6>          : "n" n
+<UFDE5> <KP_7>          : "o" o
+<UFDE5> <KP_8>          : "p" p
+<UFDE5> <KP_8>          : "q" q
+
+<UFDE6> <KP_1>          : "r" r
+<UFDE6> <KP_2>          : "s" s
+<UFDE6> <KP_3>          : "t" t
+<UFDE6> <KP_4>          : "u" u
+<UFDE6> <KP_5>          : "v" v
+<UFDE6> <KP_6>          : "w" w
+<UFDE6> <KP_7>          : "x" x
+<UFDE6> <KP_8>          : "y" y
+<UFDE6> <KP_8>          : "z" z
+
+# control chars
+<UFDD9>	: "	" U0009
+<UFDEC>	: "" U001C
+<UFDED>	: "" U001D
+<UFDEE>	: "" U001E
+<UFDEF>	: "" U001F
+
+<dead_tilde> <space>			: "˜"	U02DC # SMALL TILDE
+<dead_tilde> <dead_tilde>		: "˜"	U02DC # SMALL TILDE
+
+<dead_stroke> <bracketleft>			: "⹕"	U2E55 # LEFT SQUARE BRACKET WITH STROKE
+<dead_stroke> <bracketright>			: "⹖"	U2E56 # RIGHT SQUARE BRACKET WITH STROKE
+<dead_stroke> <dead_stroke> <bracketleft>	: "⹗"	U2E57 # LEFT SQUARE BRACKET WITH DOUBLE STROKE
+<dead_stroke> <dead_stroke> <bracketright>	: "⹘"	U2E58 # RIGHT SQUARE BRACKET WITH DOUBLE STROKE
+
+# Currencies in contemporary circulation
+# <dead_currency> <4>			: "�"	U???? # RUFIYAA SIGN (not yet encoded)
+<dead_currency> <B>			: "₿"	U20BF # BITCOIN SIGN
+<dead_currency> <b>			: "฿"	Thai_baht # THAI CURRENCY SYMBOL BAHT
+<dead_currency> <C>			: "₡"	ColonSign # COLON SIGN
+<dead_currency> <c> 			: "¢"	cent # CENT SIGN
+<dead_currency> <Ccedilla>		: "₵"	U20B5 # CEDI SIGN
+<dead_currency> <dead_cedilla> <C>	: "₵"	U20B5 # CEDI SIGN
+<dead_currency> <ccedilla>		: "⃀"	U20C0 # SOM SIGN
+<dead_currency> <dead_cedilla> <c>	: "⃀"	U20C0 # SOM SIGN
+<dead_currency> <D>			: "֏"	U058F # ARMENIAN DRAM SIGN
+<dead_currency> <d>			: "₫"	DongSign # DONG SIGN
+<dead_currency> <E>			: "₼"	U20BC # MANAT SIGN
+<dead_currency> <e>			: "€"	EuroSign # EURO SIGN
+<dead_currency> <F>			: "؋"	U060B # AFGHANI SIGN
+<dead_currency> <f>			: "ƒ"	function # LATIN SMALL LETTER F WITH HOOK
+<dead_currency> <g>			: "₾"	U20BE # LARI SIGN
+<dead_currency> <G>			: "₲"	U20B2 # GUARANI SIGN
+<dead_currency> <H>			: "₴"	U20B4 # HRYVNIA SIGN
+<dead_currency> <h>			: "₴"	U20B4 # HRYVNIA SIGN
+<dead_currency> <K>			: "₭"	U20AD # KIP SIGN
+<dead_currency> <k>			: "៛"	U17DB # KHMER CURRENCY SYMBOL RIEL
+<dead_currency> <L>			: "£"	sterling # POUND SIGN
+<dead_currency> <l>			: "₺"	U20BA # TURKISH LIRA SIGN
+<dead_currency> <M>			: "₮"	U20AE # TUGRIK SIGN
+<dead_currency> <m>			: "₥"	MillSign # MILL SIGN
+<dead_currency> <N>			: "₦"	NairaSign # NAIRA SIGN
+<dead_currency> <n>			: "₦"	NairaSign # NAIRA SIGN
+# <dead_currency> <P>			: "�"	U???? # PRIDNESTROVIAN RUBLE SIGN (not yet encoded)
+<dead_currency> <p>			: "₱"	U20B1 # PESO SIGN
+<dead_currency> <R>			: "₽"	U20BD # RUBLE SIGN
+<dead_currency> <r>			: "₹"	U20B9 # INDIAN RUPEE SIGN
+<dead_currency> <S>			: "$"	dollar # DOLLAR SIGN
+<dead_currency> <s>			: "₪"	NewSheqelSign # NEW SHEQEL SIGN
+<dead_currency> <T>			: "₸"	U20B8 # TENGE SIGN
+<dead_currency> <t>			: "৳"	U09F3 # BENGALI RUPEE SIGN
+<dead_currency> <W>			: "₩"	WonSign # WON SIGN
+<dead_currency> <w>			: "₩"	WonSign # WON SIGN
+<dead_currency> <Y>			: "¥"	yen # YEN SIGN
+<dead_currency> <y>			: "¥"	yen # YEN SIGN
+# Obsolete currencies
+<dead_currency> <minus> <A>		: "₳"	U20B3 # AUSTRAL SIGN
+<dead_currency> <minus> <a>		: "₳"	U20B3 # AUSTRAL SIGN
+<dead_currency> <minus> <C>		: "₢"	CruzeiroSign # CRUZEIRO SIGN
+<dead_currency> <minus> <c>		: "₢"	CruzeiroSign # CRUZEIRO SIGN
+<dead_currency> <minus> <D>		: "₯"	U20AF # DRACHMA SIGN
+<dead_currency> <minus> <d>		: "₰"	U20B0 # GERMAN PENNY SIGNs
+<dead_currency> <minus> <E>		: "₠"	EcuSign # EURO-CURRENCY SIGN
+<dead_currency> <minus> <e>		: "₠"	EcuSign # EURO-CURRENCY SIGN
+<dead_currency> <minus> <F>		: "₣"	FFrancSign # FRENCH FRANC SIGN
+<dead_currency> <minus> <f>		: "₣"	FFrancSign # FRENCH FRANC SIGN
+<dead_currency> <minus> <I>		: "𐆙"	U10199 # ROMAN DUPONDIUS SIGN
+<dead_currency> <minus> <i>		: "𐆚"	U1019A # ROMAN AS SIGN
+<dead_currency> <minus> <M>		: "ℳ"	U2133 # SCRIPT CAPITAL M
+<dead_currency> <minus> <m>		: "₻"	U20BB # NORDIC MARK SIGN
+<dead_currency> <minus> <O>		: "º"	masculine # MASCULINE ORDINAL INDICATOR
+<dead_currency> <minus> <R>		: "ℛ"	U211B # SCRIPT CAPITAL R
+<dead_currency> <minus> <r>		: "ℛ"	U211B # SCRIPT CAPITAL R
+<dead_currency> <minus> <S>		: "𐆘"	U10198 # ROMAN SESTERTIUS SIGN
+<dead_currency> <minus> <s>		: "𐆘"	U10198 # ROMAN SESTERTIUS SIGN
+<dead_currency> <minus> <T>		: "₶"	U20B6 # LIVRE TOURNOIS SIGN
+<dead_currency> <minus> <t>		: "₶"	U20B6 # LIVRE TOURNOIS SIGN
+<dead_currency> <minus> <V>		: "𐆗"	U10197 # ROMAN QUINARIUS SIGN
+<dead_currency> <minus> <v>		: "𐆗"	U10197 # ROMAN QUINARIUS SIGN
+<dead_currency> <minus> <X>		: "𐆖"	U10196 # ROMAN DENARIUS SIGN
+<dead_currency> <minus> <x>		: "𐆖"	U10196 # ROMAN DENARIUS SIGN
+# Roman coinage
+<dead_currency> <q> <0>			: "𐆚"	U1019A # ROMAN AS SIGN
+<dead_currency> <q> <1>			: "𐆖"	U10196 # ROMAN DENARIUS SIGN
+<dead_currency> <q> <2>			: "𐆗"	U10197 # ROMAN QUINARIUS SIGN
+<dead_currency> <q> <4>			: "𐆘"	U10198 # ROMAN SESTERTIUS SIGN
+<dead_currency> <q> <5>			: "𐆙"	U10199 # ROMAN DUPONDIUS SIGN
+
+# Double acute
+<dead_acute> <space>				: "´"	acute # ACUTE ACCENT
+<dead_acute> <dead_acute>			: "´"	acute # ACUTE ACCENT
+<dead_acute> <dead_acute> <space>		: "˝"	U2dd # DOUBLE ACUTE ACCENT
+<dead_acute> <dead_acute> <dead_acute>		: "˝"	U2dd # DOUBLE ACUTE ACCENT
+<dead_acute> <dead_acute> <O>			: "Ő"	U0150 # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <Oacute>				: "Ő"	U0150 # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <o>			: "ő"	U0151 # LATIN SMALL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <oacute>				: "ő"	U0151 # LATIN SMALL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <U>			: "Ű"	U0170 # LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
+<dead_acute> <Uacute>				: "Ű"	U0170 # LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <u>			: "ű"	U0171 # LATIN SMALL LETTER U WITH DOUBLE ACUTE
+<dead_acute> <uacute>				: "ű"	U0171 # LATIN SMALL LETTER U WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <nobreakspace>	: "̋"	U030B # COMBINING DOUBLE ACUTE ACCENT
+# Double grave
+<dead_grave> <dead_grave> <A>			: "Ȁ"	U0200 # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <a>			: "ȁ"	U0201 # LATIN SMALL LETTER A WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <E>			: "Ȅ"	U0204 # LATIN CAPITAL LETTER E WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <e>			: "ȅ"	U0205 # LATIN SMALL LETTER E WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <I>			: "Ȉ"	U0208 # LATIN CAPITAL LETTER I WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <i>			: "ȉ"	U0209 # LATIN SMALL LETTER I WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <O>			: "Ȍ"	U020C # LATIN CAPITAL LETTER O WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <o>			: "ȍ"	U020D # LATIN SMALL LETTER O WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <R>			: "Ȑ"	U0210 # LATIN CAPITAL LETTER R WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <r>			: "ȑ"	U0211 # LATIN SMALL LETTER R WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <U>			: "Ȕ"	U0214 # LATIN CAPITAL LETTER U WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <u>			: "ȕ"	U0215 # LATIN SMALL LETTER U WITH DOUBLE GRAVE
+<dead_grave> <dead_grave> <U0474>		: "Ѷ"	U0476 # CYRILLIC CAPITAL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
+<dead_grave> <dead_grave> <U0475>		: "ѷ"	U0477 # CYRILLIC SMALL LETTER IZHITSA WITH DOUBLE GRAVE ACCENT
+<dead_grave> <dead_grave> <nobreakspace>	: "̏"	U030F # COMBINING DOUBLE GRAVE ACCENT # todo upstream
+<dead_grave> <dead_grave> <Cyrillic_a>		: "а̏" # CYRILLIC SMALL LETTER A plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_A>		: "А̏" # CYRILLIC CAPITAL LETTER A plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_A>		: "А̏" # CYRILLIC CAPITAL LETTER A plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_ie>	: "е̏" # CYRILLIC SMALL LETTER IE plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_IE>	: "Е̏" # CYRILLIC CAPITAL LETTER IE plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_i>		: "и̏" # CYRILLIC SMALL LETTER I plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_I>		: "И̏" # CYRILLIC CAPITAL LETTER I plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_o>		: "о̏" # CYRILLIC SMALL LETTER O plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_O>		: "О̏" # CYRILLIC CAPITAL LETTER O plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_u>		: "у̏" # CYRILLIC SMALL LETTER U plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_U>		: "У̏" # CYRILLIC CAPITAL LETTER U plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_er>	: "р̏" # CYRILLIC SMALL LETTER ER plus COMBINING DOUBLE GRAVE
+<dead_grave> <dead_grave> <Cyrillic_ER>	: "Р̏" # CYRILLIC CAPITAL LETTER ER plus COMBINING DOUBLE GRAVE
+# Double stroke
+<dead_stroke> <dead_stroke> <l>	: "ⱡ" U2C61 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<dead_stroke> <dead_stroke> <L>	: "Ⱡ" U2C60 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<dead_stroke> <U0142>	: "ⱡ" U2C61 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<dead_stroke> <U0141>	: "Ⱡ" U2C60 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<dead_stroke> <U019A>	: "ⱡ" U2C61 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<dead_stroke> <U023D>	: "Ⱡ" U2C60 # LATIN SMALL LETTER L WITH DOUBLE BAR
+# Tilde
+<dead_tilde> <l>	: "ɫ" U026B # LATIN SMALL LETTER L WITH MIDDLE TILDE
+<dead_tilde> <L>	: "Ɫ" U2C62 # LATIN CAPITAL LETTER L WITH MIDDLE TILDE
+# Hook
+<dead_hook> <r>	: "ɽ" U027D # LATIN SMALL LETTER R WITH TAIL
+<dead_hook> <R>	: "Ɽ" U2C64 # LATIN CAPITAL LETTER R WITH TAIL
+# Diaeresis
+<dead_abovedot> <dead_abovedot> <dead_abovedot>	: "¨"	diaeresis # DIAERESIS
+<dead_abovedot> <dead_abovedot> <space>	: "¨"	diaeresis # DIAERESIS
+<dead_abovedot> <dead_abovedot> <A>			: "Ä"	Adiaeresis # LATIN CAPITAL LETTER A WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <E>			: "Ë"	Ediaeresis # LATIN CAPITAL LETTER E WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <I>			: "Ï"	Idiaeresis # LATIN CAPITAL LETTER I WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <O>			: "Ö"	Odiaeresis # LATIN CAPITAL LETTER O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <U>			: "Ü"	Udiaeresis # LATIN CAPITAL LETTER U WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <a>			: "ä"	adiaeresis # LATIN SMALL LETTER A WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <e>			: "ë"	ediaeresis # LATIN SMALL LETTER E WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <i>			: "ï"	idiaeresis # LATIN SMALL LETTER I WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <o>			: "ö"	odiaeresis # LATIN SMALL LETTER O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <u>			: "ü"	udiaeresis # LATIN SMALL LETTER U WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <y>			: "ÿ"	ydiaeresis # LATIN SMALL LETTER Y WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Y>			: "Ÿ"	U0178 # LATIN CAPITAL LETTER Y WITH DIAERESIS
+<dead_macron> <dead_abovedot> <dead_abovedot> <U>		: "Ǖ"	U01D5 # LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <U>	: "Ǖ"	U01D5 # LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <U>	: "Ǖ"	U01D5 # LATIN CAPITAL LETTER U WITH DIAERESIS AND MACRON
+<dead_macron> <dead_abovedot> <dead_abovedot> <u>		: "ǖ"	U01D6 # LATIN SMALL LETTER U WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <u>	: "ǖ"	U01D6 # LATIN SMALL LETTER U WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <u>	: "ǖ"	U01D6 # LATIN SMALL LETTER U WITH DIAERESIS AND MACRON
+<dead_acute> <dead_abovedot> <dead_abovedot> <U>		: "Ǘ"	U01D7 # LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <U>	: "Ǘ"	U01D7 # LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE
+<Multi_key> <apostrophe> <dead_abovedot> <dead_abovedot> <U>	: "Ǘ"	U01D7 # LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE
+<dead_acute> <dead_abovedot> <dead_abovedot> <u>		: "ǘ"	U01D8 # LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <u>	: "ǘ"	U01D8 # LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE
+<Multi_key> <apostrophe> <dead_abovedot> <dead_abovedot> <u>	: "ǘ"	U01D8 # LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE
+<dead_caron> <dead_abovedot> <dead_abovedot> <U>		: "Ǚ"	U01D9 # LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON
+<Multi_key> <c> <dead_abovedot> <dead_abovedot> <U>		: "Ǚ"	U01D9 # LATIN CAPITAL LETTER U WITH DIAERESIS AND CARON
+<dead_caron> <dead_abovedot> <dead_abovedot> <u>		: "ǚ"	U01DA # LATIN SMALL LETTER U WITH DIAERESIS AND CARON
+<Multi_key> <c> <dead_abovedot> <dead_abovedot> <u>		: "ǚ"	U01DA # LATIN SMALL LETTER U WITH DIAERESIS AND CARON
+<dead_grave> <dead_abovedot> <dead_abovedot> <U>		: "Ǜ"	U01DB # LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE
+<Multi_key> <grave> <dead_abovedot> <dead_abovedot> <U>	: "Ǜ"	U01DB # LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE
+<dead_grave> <dead_abovedot> <dead_abovedot> <u>		: "ǜ"	U01DC # LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE
+<Multi_key> <grave> <dead_abovedot> <dead_abovedot> <u>	: "ǜ"	U01DC # LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE
+<dead_macron> <dead_abovedot> <dead_abovedot> <A>		: "Ǟ"	U01DE # LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <A>	: "Ǟ"	U01DE # LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <A>	: "Ǟ"	U01DE # LATIN CAPITAL LETTER A WITH DIAERESIS AND MACRON
+<dead_macron> <dead_abovedot> <dead_abovedot> <a>		: "ǟ"	U01DF # LATIN SMALL LETTER A WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <a>	: "ǟ"	U01DF # LATIN SMALL LETTER A WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <a>	: "ǟ"	U01DF # LATIN SMALL LETTER A WITH DIAERESIS AND MACRON
+<dead_macron> <dead_abovedot> <dead_abovedot> <O>		: "Ȫ"	U022A # LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <O>	: "Ȫ"	U022A # LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <O>	: "Ȫ"	U022A # LATIN CAPITAL LETTER O WITH DIAERESIS AND MACRON
+<dead_macron> <dead_abovedot> <dead_abovedot> <o>		: "ȫ"	U022B # LATIN SMALL LETTER O WITH DIAERESIS AND MACRON
+<Multi_key> <macron> <dead_abovedot> <dead_abovedot> <o>	: "ȫ"	U022B # LATIN SMALL LETTER O WITH DIAERESIS AND MACRON
+<Multi_key> <underscore> <dead_abovedot> <dead_abovedot> <o>	: "ȫ"	U022B # LATIN SMALL LETTER O WITH DIAERESIS AND MACRON
+<dead_abovedot> <dead_abovedot> <acute>				: "̈́"	U0344 # COMBINING GREEK DIALYTIKA TONOS
+<dead_abovedot> <dead_abovedot> <apostrophe>				: "̈́"	U0344 # COMBINING GREEK DIALYTIKA TONOS
+<dead_acute> <dead_abovedot> <dead_abovedot> <space>			: "΅"	U0385 # GREEK DIALYTIKA TONOS
+<dead_abovedot> <dead_abovedot> <dead_acute> <space>			: "΅"	U0385 # GREEK DIALYTIKA TONOS
+<dead_acute> <dead_abovedot> <dead_abovedot> <Greek_iota>		: "ΐ"	U0390 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
+<dead_abovedot> <dead_abovedot> <dead_acute> <Greek_iota>		: "ΐ"	U0390 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <Greek_iota>	: "ΐ"	U0390 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
+<Multi_key> <apostrophe> <dead_abovedot> <dead_abovedot> <Greek_iota>	: "ΐ"	U0390 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS
+<dead_abovedot> <dead_abovedot> <Greek_IOTA>				: "Ϊ"	U03AA # GREEK CAPITAL LETTER IOTA WITH DIALYTIKA
+<dead_abovedot> <dead_abovedot> <Greek_UPSILON>			: "Ϋ"	U03AB # GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA
+<dead_acute> <dead_abovedot> <dead_abovedot> <Greek_upsilon>		: "ΰ"	U03B0 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <Greek_upsilon>	: "ΰ"	U03B0 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS
+<Multi_key> <apostrophe><dead_abovedot> <dead_abovedot> <Greek_upsilon>: "ΰ"	U03B0 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS
+<dead_abovedot> <dead_abovedot> <dead_acute> <Greek_upsilon>		: "ΰ"	U03B0 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS
+<dead_abovedot> <dead_abovedot> <Greek_iota>				: "ϊ"	U03CA # GREEK SMALL LETTER IOTA WITH DIALYTIKA
+<dead_abovedot> <dead_abovedot> <Greek_upsilon>			: "ϋ"	U03CB # GREEK SMALL LETTER UPSILON WITH DIALYTIKA
+<dead_abovedot> <dead_abovedot> <Cyrillic_IE>		: "Ё"	U0401 # CYRILLIC CAPITAL LETTER IO
+<dead_abovedot> <dead_abovedot> <Ukrainian_I>		: "Ї"	U0407 # CYRILLIC CAPITAL LETTER YI
+<dead_abovedot> <dead_abovedot> <Cyrillic_ie>		: "ё"	U0451 # CYRILLIC SMALL LETTER IO
+<dead_abovedot> <dead_abovedot> <Ukrainian_i>		: "ї"	U0457 # CYRILLIC SMALL LETTER YI
+<dead_abovedot> <dead_abovedot> <Cyrillic_A>		: "Ӓ"	U04D2 # CYRILLIC CAPITAL LETTER A WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_a>		: "ӓ"	U04D3 # CYRILLIC SMALL LETTER A WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <U04D8>		: "Ӛ"	U04DA # CYRILLIC CAPITAL LETTER SCHWA WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <U04D9>		: "ӛ"	U04DB # CYRILLIC SMALL LETTER SCHWA WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_ZHE>		: "Ӝ"	U04DC # CYRILLIC CAPITAL LETTER ZHE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_zhe>		: "ӝ"	U04DD # CYRILLIC SMALL LETTER ZHE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_ZE>		: "Ӟ"	U04DE # CYRILLIC CAPITAL LETTER ZE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_ze>		: "ӟ"	U04DF # CYRILLIC SMALL LETTER ZE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_I>		: "Ӥ"	U04E4 # CYRILLIC CAPITAL LETTER I WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_i>		: "ӥ"	U04E5 # CYRILLIC SMALL LETTER I WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_O>		: "Ӧ"	U04E6 # CYRILLIC CAPITAL LETTER O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_o>		: "ӧ"	U04E7 # CYRILLIC SMALL LETTER O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <U04E8>		: "Ӫ"	U04EA # CYRILLIC CAPITAL LETTER BARRED O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <U04E9>		: "ӫ"	U04EB # CYRILLIC SMALL LETTER BARRED O WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_E>		: "Ӭ"	U04EC # CYRILLIC CAPITAL LETTER E WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_e>		: "ӭ"	U04ED # CYRILLIC SMALL LETTER E WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_U>		: "Ӱ"	U04F0 # CYRILLIC CAPITAL LETTER U WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_u>		: "ӱ"	U04F1 # CYRILLIC SMALL LETTER U WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_CHE>		: "Ӵ"	U04F4 # CYRILLIC CAPITAL LETTER CHE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_che>		: "ӵ"	U04F5 # CYRILLIC SMALL LETTER CHE WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_YERU>	: "Ӹ"	U04F8 # CYRILLIC CAPITAL LETTER YERU WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <Cyrillic_yeru>	: "ӹ"	U04F9 # CYRILLIC SMALL LETTER YERU WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <H>			: "Ḧ"	U1E26 # LATIN CAPITAL LETTER H WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <h>			: "ḧ"	U1E27 # LATIN SMALL LETTER H WITH DIAERESIS
+<dead_acute> <dead_abovedot> <dead_abovedot> <I>		: "Ḯ"	U1E2E # LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <I>	: "Ḯ"	U1E2E # LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE
+<Multi_key> <apostrophe> <dead_abovedot> <dead_abovedot> <I>	: "Ḯ"	U1E2E # LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE
+<dead_acute> <dead_abovedot> <dead_abovedot> <i>		: "ḯ"	U1E2F # LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE
+<Multi_key> <acute> <dead_abovedot> <dead_abovedot> <i>	: "ḯ"	U1E2F # LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE
+<Multi_key> <apostrophe> <dead_abovedot> <dead_abovedot> <i>	: "ḯ"	U1E2F # LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE
+<dead_abovedot> <dead_abovedot> <Otilde>			: "Ṏ"	U1E4E # LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <dead_tilde> <O>		: "Ṏ"	U1E4E # LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <asciitilde> <O>	: "Ṏ"	U1E4E # LATIN CAPITAL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <otilde>			: "ṏ"	U1E4F # LATIN SMALL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <dead_tilde> <o>		: "ṏ"	U1E4F # LATIN SMALL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <asciitilde> <o>	: "ṏ"	U1E4F # LATIN SMALL LETTER O WITH TILDE AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Umacron>			: "Ṻ"	U1E7A # LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <dead_macron> <U>		: "Ṻ"	U1E7A # LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <macron> <U>	: "Ṻ"	U1E7A # LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <underscore> <U>	: "Ṻ"	U1E7A # LATIN CAPITAL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <umacron>			: "ṻ"	U1E7B # LATIN SMALL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <dead_macron> <u>		: "ṻ"	U1E7B # LATIN SMALL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <macron> <u>	: "ṻ"	U1E7B # LATIN SMALL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <Multi_key> <underscore> <u>	: "ṻ"	U1E7B # LATIN SMALL LETTER U WITH MACRON AND DIAERESIS
+<dead_abovedot> <dead_abovedot> <W>				: "Ẅ"	U1E84 # LATIN CAPITAL LETTER W WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <w>				: "ẅ"	U1E85 # LATIN SMALL LETTER W WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <X>				: "Ẍ"	U1E8C # LATIN CAPITAL LETTER X WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <x>				: "ẍ"	U1E8D # LATIN SMALL LETTER X WITH DIAERESIS
+<dead_abovedot> <dead_abovedot> <t>				: "ẗ"	U1E97 # LATIN SMALL LETTER T WITH DIAERESIS
+<dead_grave> <dead_abovedot> <dead_abovedot> <Greek_iota>	: "ῒ"	U1FD2 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND VARIA
+<Multi_key> <grave> <dead_abovedot> <dead_abovedot> <Greek_iota>	: "ῒ"	U1FD2 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND VARIA
+<dead_tilde> <dead_abovedot> <dead_abovedot> <Greek_iota>	: "ῗ"	U1FD7 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND PERISPOMENI
+<Multi_key> <asciitilde> <quotedbl> <Greek_iota>	: "ῗ"	U1FD7 # GREEK SMALL LETTER IOTA WITH DIALYTIKA AND PERISPOMENI
+<dead_grave> <dead_abovedot> <dead_abovedot> <Greek_upsilon>	: "ῢ"	U1FE2 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND VARIA
+<Multi_key> <grave> <dead_abovedot> <dead_abovedot> <Greek_upsilon>	: "ῢ"	U1FE2 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND VARIA
+<dead_tilde> <dead_abovedot> <dead_abovedot> <Greek_upsilon>	: "ῧ"	U1FE7 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND PERISPOMENI
+<Multi_key> <asciitilde> <dead_abovedot> <dead_abovedot> <Greek_upsilon>	: "ῧ"	U1FE7 # GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND PERISPOMENI
+<dead_abovedot> <dead_abovedot> <dead_belowdiaeresis> <equal>	: "⩷"	U2A77 # EQUALS SIGN WITH TWO DOTS ABOVE AND TWO DOTS BELOW
+<dead_belowdiaeresis> <dead_abovedot> <dead_abovedot> <equal>	: "⩷"	U2A77 # EQUALS SIGN WITH TWO DOTS ABOVE AND TWO DOTS BELOW
+<dead_abovedot> <dead_abovedot> <Iacute>		: "Ḯ"	U1E2E # LATIN CAPITAL LETTER I WITH DIAERESIS AND ACUTE
+<dead_abovedot> <dead_abovedot> <iacute>		: "ḯ"	U1E2F # LATIN SMALL LETTER I WITH DIAERESIS AND ACUTE
+<dead_abovedot> <dead_abovedot> <Uacute>		: "Ǘ"	U01D7 # LATIN CAPITAL LETTER U WITH DIAERESIS AND ACUTE
+<dead_abovedot> <dead_abovedot> <uacute>		: "ǘ"	U01D8 # LATIN SMALL LETTER U WITH DIAERESIS AND ACUTE
+<dead_abovedot> <dead_abovedot> <Ugrave>		: "Ǜ"	U01DB # LATIN CAPITAL LETTER U WITH DIAERESIS AND GRAVE
+<dead_abovedot> <dead_abovedot> <ugrave>		: "ǜ"	U01DC # LATIN SMALL LETTER U WITH DIAERESIS AND GRAVE
+<dead_abovedot> <dead_abovedot> <nobreakspace>		: "̈"	U0308 # COMBINING DIAERESIS
+# Diaeresis below
+<dead_belowdot> <dead_belowdot> <U>	: "Ṳ"	U1E72 # LATIN CAPITAL LETTER U WITH DIAERESIS BELOW
+<dead_belowdot> <dead_belowdot> <u> : "ṳ"	U1E73 # LATIN SMALL LETTER U WITH DIAERESIS BELOW
+<dead_belowdot> <U1EE4>	: "Ṳ"	U1E72 # LATIN CAPITAL LETTER U WITH DIAERESIS BELOW
+<dead_belowdot> <U1EE5>	: "ṳ"	U1E73 # LATIN SMALL LETTER U WITH DIAERESIS BELOW
+<dead_belowdot> <dead_belowdot> <nobreakspace>:	"̤"	U0324 # COMBINING DIAERESIS BELOW
+
+<dead_abovedot> <dead_breve> <nobreakspace>: "̐" U0310 # COMBINING CANDRABINDU
