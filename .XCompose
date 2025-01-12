@@ -36,6 +36,16 @@
 <UFDEE>	: "" U001E
 <UFDEF>	: "" U001F
 
+# glottal
+<UFDD0> <A>: "Ꞻ"	UA7BA # LATIN CAPITAL LETTER GLOTTAL A
+<UFDD0> <a>: "ꞻ"	UA7BB # LATIN SMALL LETTER GLOTTAL A
+<UFDD0> <I>: "Ꞽ"	UA7BC # LATIN CAPITAL LETTER GLOTTAL I
+<UFDD0> <i>: "ꞽ"	UA7BD # LATIN SMALL LETTER GLOTTAL I
+<UFDD0> <idotless>: "ꞽ"	UA7BD # LATIN SMALL LETTER GLOTTAL I
+<UFDD0> <U>: "Ꞿ"	UA7BE # LATIN CAPITAL LETTER GLOTTAL U
+<UFDD0> <u>: "ꞿ"	UA7BF # LATIN SMALL LETTER GLOTTAL U
+
+
 <dead_tilde> <space>			: "˜"	U02DC # SMALL TILDE
 <dead_tilde> <dead_tilde>		: "˜"	U02DC # SMALL TILDE
 
@@ -49,7 +59,7 @@
 <dead_currency> <B>			: "₿"	U20BF # BITCOIN SIGN
 <dead_currency> <b>			: "฿"	Thai_baht # THAI CURRENCY SYMBOL BAHT
 <dead_currency> <C>			: "₡"	ColonSign # COLON SIGN
-<dead_currency> <c> 			: "¢"	cent # CENT SIGN
+<dead_currency> <c>			: "¢"	cent # CENT SIGN
 <dead_currency> <Ccedilla>		: "₵"	U20B5 # CEDI SIGN
 <dead_currency> <dead_cedilla> <C>	: "₵"	U20B5 # CEDI SIGN
 <dead_currency> <ccedilla>		: "⃀"	U20C0 # SOM SIGN

@@ -15,7 +15,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE02> { [ 2            , at            , degree              , dead_abovering      , copyright, registered, dead_belowring, phonographcopyright ] };
     //                                                                                TRIPLE DAGGER           Alveolar click
     key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash, U01C2         ] };
-    key <AE04> { [ 4            , dollar        , cent                , dead_currency        ] };
+    //                                                                                        Right half ring  Left half ring  Glottal dead key
+    key <AE04> { [ 4            , dollar        , cent                , dead_currency       , U02BF          , U02BE         , UFDD0] };
     //                                                                                         PER TEN THOUSAND COMMERCIAL MINUS
     key <AE05> { [ 5            , percent       , EuroSign            , permille            , U2031           , U2052 ] };
     //                                                                                                                               CARET INSERTION POINT
@@ -35,8 +36,8 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
-    //                                                                                         saltillo  SALTILLO
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , UA78C   , UA78B   ] };
+    //                                                                                         saltillo  SALTILLO  Egyptological ain  Egyptological AIN
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , UA78C   , UA78B   , UA725            , UA724] };
     //                                                                                         wynn   WYNN   Latin omega  Latin OMEGA
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7, UA7B7      , UA7B6      ] };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
@@ -56,16 +57,16 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                         ram's horn  RAM'S HORN  Latin lambda  Latin LAMBDA
     key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           , U0264     , UA7CB     , UA7DB       , UA7DA       ] };
     key.type[1] = "EIGHT_LEVEL";
-    //                                                                                         Modifier letter prime
-    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9                , dead_belowmacron, dead_horn ] };
-    //                                                                                                                              Combining vertical line above  Combining double vertical line above
-    key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           , dead_belowbreve, dead_invertedbreve, U030D                        , U030E ] };
+    //                                                                                         Modifier letter prime                               Modifier letter double apostrophe
+    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , U02B9                , dead_belowmacron, dead_horn, U02EE ] };
+    //                                                                                                                              Combining vertical line above  Modifier double prime
+    key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           , dead_belowbreve, dead_invertedbreve, U030D                        , U02BA] };
     //                                                                  BULLET                WHITE BULLET             Dental click  Lateral click
     key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , U25E6       , brokenbar, U01C0       , U01C1        ] };
 
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
-    //                                                                                         Latin alpha  Latin ALPHA
-    key <AC01> { [ a            , A             , aacute              , Aacute               , U0251      , U2C6D      , ordfeminine, ordfeminine ] };
+    //                                                                                         Latin alpha  Latin ALPHA  Egyplological alef  Egyptological ALEF
+    key <AC01> { [ a            , A             , aacute              , Aacute               , U0251      , U2C6D      , UA723             , UA722 ] };
     //                                                                                         small capital R
     key <AC02> { [ r            , R             , agrave              , Agrave               , U0280, R] };
     //                                                                                        Long s         esh    ESH
@@ -96,8 +97,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 , UA793     , UA792     ] };
     //                                                                                                    d with tail  African D
     key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH, U0256      , U0189    ] };
-    //                                                                                          turned v  turned V
-    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245] };
+    //                                                                                          turned v  turned V  hwair  HWAIR
+    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245   , U0195, U01F6] };
     //                                                                                                    z with descender  Z with descender
     key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
     //                                                                      REVERSED QUESTION MARK     Glottal stop  Pharyngeal voiced fricative
