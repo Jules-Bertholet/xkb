@@ -36,11 +36,11 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
-    //                                                                                         gha    GHA    Egyptological ain  Egyptological AIN
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , U01A3, U01A2, UA725            , UA724] };
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
     //                                                                                         wynn   WYNN   Latin omega  Latin OMEGA
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7, UA7B7      , UA7B6      ] };
-    key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
+    //                                                                                         Egyptological ain  Egyptological AIN
+    key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          , UA725            , UA724] };
     //                                                                                         glottal stop  GLOTTAL STOP  saltillo  SALTILLO  
     key <AD04> { [ p            , P             , acircumflex         , Acircumflex          , U0242       , U0241       , UA78C   , UA78B   ] };
     //                                                                                         Latin beta  Latin BETA
@@ -97,17 +97,16 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 , UA793     , UA792     ] };
     //                                                                                                    d with tail  African D
     key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH, U0256      , U0189    ] };
-    //                                                                                          turned v  turned V  hwair  HWAIR
-    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245   , U0195, U01F6] };
-    //                                                                                                    z with descender  Z with descender
-    key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
+    //                                                                                          turned v  turned V
+    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245   ] };
+    key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH] };
     //                                                                      REVERSED QUESTION MARK     Glottal stop  Pharyngeal voiced fricative
     key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294       , U0295                      ],
                  type[1] = "EIGHT_LEVEL" };
-    //                                                                                          kra    KRA           k with descender  K with descender
-    key <AB07> { [ k            , K             , icircumflex          , Icircumflex          , U0138, { K, U02BC }, U2C6A           , U2C69           ] };
-    //                                                                                          turned h  turned H  h with descender  H with descender
-    key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          , U0265   , UA78D   , U2C68           , U2C67           ] };
+    //                                                                                          kra    KRA
+    key <AB07> { [ k            , K             , icircumflex          , Icircumflex          , U0138, { K, U02BC }] };
+    //                                                                                          turned h  turned H  hwair  HWAIR
+    key <AB08> { [ h            , H             , ecircumflex          , Ecircumflex          , U0265   , UA78D   , U0195, U01F6] };
     key.type[1] = "EIGHT_LEVEL";
     //                                                                                           Combining comma above  Combining comma above right  Combining vertical line above  Combining turned comma above
     key <AB09> { [ comma        , less          , dead_cedilla         , dead_ogonek           , U0313                , U0315                      , U030D                        , U0312 ] };
