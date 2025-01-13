@@ -36,15 +36,15 @@ xkb_symbols "colemak_dh_wide_am" {
 
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
-    //                                                                                         saltillo  SALTILLO  Egyptological ain  Egyptological AIN
-    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , UA78C   , UA78B   , UA725            , UA724] };
+    //                                                                                         gha    GHA    Egyptological ain  Egyptological AIN
+    key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           , U01A3, U01A2, UA725            , UA724] };
     //                                                                                         wynn   WYNN   Latin omega  Latin OMEGA
     key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7, UA7B7      , UA7B6      ] };
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          ] };
-    //                                                                                         glottal stop  GLOTTAL STOP
-    key <AD04> { [ p            , P             , acircumflex         , Acircumflex          , U0242       , U0241       ] };
-    //                                                                                         Latin beta  Latin BETA  gha    GHA
-    key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           , UA7B5     , UA7B4     , U01A3, U01A2 ] };
+    //                                                                                         glottal stop  GLOTTAL STOP  saltillo  SALTILLO  
+    key <AD04> { [ p            , P             , acircumflex         , Acircumflex          , U0242       , U0241       , UA78C   , UA78B   ] };
+    //                                                                                         Latin beta  Latin BETA
+    key <AD05> { [ b            , B             , odiaeresis          , Odiaeresis           , UA7B5     , UA7B4     ] };
     //                                             SINGLE LEFT-POINTING ANGLE QUOTATION MARK  BOTTOM LEFT HALF BRACKET TOP LEFT HALF BRACKET  LEFT SQUARE BRACKET WITH QUILL  LEFT VERTICAL BAR WITH QUILL
     key <AD06> { [ bracketleft  , braceleft     , guillemetleft       , U2039               , U2E24                   , U2E22               , U2045                         , U2E20],
                  type[1] = "EIGHT_LEVEL" };
@@ -70,7 +70,7 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                         small capital R
     key <AC02> { [ r            , R             , agrave              , Agrave               , U0280, R] };
     //                                                                                        Long s         esh    ESH
-    key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , U017F, U0283, U01A9 ] };
+    key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , S, U0283, U01A9 ] };
     //                                                                                                      t with diagonal stroke  T with diagonal stroke
     key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN, U2C66                 , U023E                 ] };
     //                                                                                         yogh   YOGH   Latin gamma  latin GAMMA
