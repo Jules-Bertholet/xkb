@@ -89,8 +89,7 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                         Barred o  Barred O  ou     OU
     key <AC11> { [ o            , O             , oacute              , Oacute               , U0275   , U019F   , U0223, U0222 ] };
 
-    //                                                                                                    z with descender  Z with descender
-    key <LSGT> { [ z            , Z             , oe                   , OE                   , ezh, EZH, U2C6C           , U2C6B           ] };
+    key <LSGT> { [ z            , Z             , oe                   , OE                   , ezh, EZH] };
     //                                                                                          Latin chi  Latin CHI
     key <AB01> { [ x            , X             , ugrave               , Ugrave               , UAB53    , UA7B3] };
     //                                                                                          Open o  Open O  c with bar  C with bar
