@@ -67,8 +67,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     //                                                                                         Latin alpha  Latin ALPHA  Egyplological alef  Egyptological ALEF
     key <AC01> { [ a            , A             , aacute              , Aacute               , U0251      , U2C6D      , UA723             , UA722 ] };
-    //                                                                                         small capital R
-    key <AC02> { [ r            , R             , agrave              , Agrave               , U0280, R] };
+    //                                                                                         small capital R  YR
+    key <AC02> { [ r            , R             , agrave              , Agrave               , U0280          , U01A6] };
     //                                                                                        Long s         esh    ESH
     key <AC03> { [ s            , S             , ucircumflex         , Ucircumflex         , U017F , S, U0283, U01A9 ] };
     //                                                                                                      t with diagonal stroke  T with diagonal stroke

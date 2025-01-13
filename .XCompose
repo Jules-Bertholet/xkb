@@ -120,6 +120,103 @@
 <UFDD1> <doubledagger>: "ǂ"	U01C2 # LATIN LETTER ALVEOLAR CLICK
 <UFDD1> <exclam>: "!"	U01C3 # LATIN LETTER RETROFLEX CLICK
 
+# Letterlike symbols
+<Multi_key> <a> <slash> <c>: "℀" U2100 # ACCOUNT OF
+<Multi_key> <a> <KP_Divide> <c>: "℀" U2100 # ACCOUNT OF
+<Multi_key> <a> <U2044> <c>: "℀" U2100 # ACCOUNT OF
+<Multi_key> <a> <slash> <s>: "℁" U2101 # ADDRESSED TO THE SUBJECT
+<Multi_key> <a> <KP_Divide> <s>: "℁" U2101 # ADDRESSED TO THE SUBJECT
+<Multi_key> <a> <U2044> <s>: "℁" U2101 # ADDRESSED TO THE SUBJECT
+<Multi_key> <C> <L>: "℄" U2104 # CENTRE LINE SYMBOL
+<Multi_key> <c> <slash> <o>: "℅" U2105 # CARE OF
+<Multi_key> <c> <KP_Divide> <o>: "℅" U2105 # CARE OF
+<Multi_key> <c> <U2044> <o>: "℅" U2105 # CARE OF
+<Multi_key> <c> <slash> <u>: "℆" U2106 # CADA UNA
+<Multi_key> <c> <KP_Divide> <u>: "℆" U2106 # CADA UNA
+<Multi_key> <c> <U2044> <u>: "℆" U2106 # CADA UNA
+<Multi_key> <l> <b>: "℔" U2114 # L B BAR SYMBOL
+<Multi_key> <N> <ordmasculine>: "№" numerosign # NUMERO SIGN
+<Multi_key> <R> <x>: "℞" U211F # PRESCRIPTION TAKE
+<Multi_key> <slash> <R>: "℟" U211F # RESPONSE
+<Multi_key> <KP_Divide> <R>: "℟" U211F # RESPONSE
+<Multi_key> <R> <slash>: "℟" U211F # RESPONSE
+<Multi_key> <R> <KP_Divide>: "℟" U211F # RESPONSE
+<Multi_key> <T> <E> <L>: "℡" U2121 # TELEPHONE SIGN
+<Multi_key> <slash> <V>: U2123 "℣" # VERSICLE
+<Multi_key> <KP_Divide> <V>: U2123 "℣" # VERSICLE
+<Multi_key> <V> <slash>: U2123 "℣" # VERSICLE
+<Multi_key> <V> <KP_Divide>: U2123 "℣" # VERSICLE
+<Multi_key> <F> <A> <X>: "℻" U213B # FACSIMILE SIGN
+<Multi_key> <P> <L>: "⅊" U214A # PROPERTY LINE
+<Multi_key> <p> <e> <r>: "⅌" U214C # PER SIGN
+<Multi_key> <P> <e> <r>: "⅌" U214C # PER SIGN
+<Multi_key> <P> <E> <R>: "⅌" U214C # PER SIGN
+<Multi_key> <A> <slash> <C>: "⅍" U214D # AKTIESELSKAB
+<Multi_key> <Α> <KP_Divide> <C>: "⅍" U214D # AKTIESELSKAB
+<Multi_key> <Α> <U2044> <C>: "⅍" U214D # AKTIESELSKAB
+
+# Fractions
+<Multi_key> <1> <slash> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
+<Multi_key> <1> <KP_Divide> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
+<Multi_key> <1> <U2044> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
+<Multi_key> <1> <slash> <2>: "½" onehalf # VULGAR FRACTION ONE HALF
+<Multi_key> <1> <KP_Divide> <2>: "½" onehalf # VULGAR FRACTION ONE HALF
+<Multi_key> <1> <U2044> <2>: "½" onehalf # VULGAR FRACTION ONE HALF
+<Multi_key> <3> <slash> <4>: "¾" threequarters # VULGAR FRACTION THREE QUARTERS
+<Multi_key> <3> <KP_Divide> <4>: "¾" threequarters # VULGAR FRACTION THREE QUARTERS
+<Multi_key> <3> <U2044> <4>: "¾" threequarters # VULGAR FRACTION THREE QUARTERS
+<Multi_key> <1> <slash> <7>: "⅐" U2150 # VULGAR FRACTION ONE SEVENTH
+<Multi_key> <1> <KP_Divide> <7>: "⅐" U2150 # VULGAR FRACTION ONE SEVENTH
+<Multi_key> <1> <U2044> <7>: "⅐" U2150 # VULGAR FRACTION ONE SEVENTH
+<Multi_key> <1> <slash> <9>: "⅑" U2151 # VULGAR FRACTION ONE NINTH
+<Multi_key> <1> <KP_Divide> <9>: "⅑" U2151 # VULGAR FRACTION ONE NINTH
+<Multi_key> <1> <U2044> <9>: "⅑" U2151 # VULGAR FRACTION ONE NINTH
+<Multi_key> <1> <slash> <1> <0>: "⅒" U2152 # VULGAR FRACTION ONE TENTH
+<Multi_key> <1> <KP_Divide> <1> <0>: "⅒" U2152 # VULGAR FRACTION ONE TENTH
+<Multi_key> <1> <U2044> <1> <0>: "⅒" U2152 # VULGAR FRACTION ONE TENTH
+<Multi_key> <1> <slash> <3>: "⅓" U2153 # VULGAR FRACTION ONE THIRD
+<Multi_key> <1> <KP_Divide> <3>: "⅓" U2153 # VULGAR FRACTION ONE THIRD
+<Multi_key> <1> <U2044> <3>: "⅓" U2153 # VULGAR FRACTION ONE THIRD
+<Multi_key> <2> <slash> <3>: "⅔" U2154 # VULGAR FRACTION TWO THIRDS
+<Multi_key> <2> <KP_Divide> <3>: "⅔" U2154 # VULGAR FRACTION TWO THIRDS
+<Multi_key> <2> <U2044> <3>: "⅔" U2154 # VULGAR FRACTION TWO THIRDS
+<Multi_key> <1> <slash> <5>: "⅕" U2155 # VULGAR FRACTION ONE FIFTH
+<Multi_key> <1> <KP_Divide> <5>: "⅕" U2155 # VULGAR FRACTION ONE FIFTH
+<Multi_key> <1> <U2044> <5>: "⅕" U2155 # VULGAR FRACTION ONE FIFTH
+<Multi_key> <2> <slash> <5>: "⅖" U2156 # VULGAR FRACTION TWO FIFTHS
+<Multi_key> <2> <KP_Divide> <5>: "⅖" U2156 # VULGAR FRACTION TWO FIFTHS
+<Multi_key> <2> <U2044> <5>: "⅖" U2156 # VULGAR FRACTION TWO FIFTHS
+<Multi_key> <3> <slash> <5>: "⅗" U2157 # VULGAR FRACTION THREE FIFTHS
+<Multi_key> <3> <KP_Divide> <5>: "⅗" U2157 # VULGAR FRACTION THREE FIFTHS
+<Multi_key> <3> <U2044> <5>: "⅗" U2157 # VULGAR FRACTION THREE FIFTHS
+<Multi_key> <4> <slash> <5>: "⅘" U2158 # VULGAR FRACTION FOUR FIFTHS
+<Multi_key> <4> <KP_Divide> <5>: "⅘" U2158 # VULGAR FRACTION FOUR FIFTHS
+<Multi_key> <4> <U2044> <5>: "⅘" U2158 # VULGAR FRACTION FOUR FIFTHS
+<Multi_key> <1> <slash> <6>: "⅙" U2159 # VULGAR FRACTION ONE SIXTH
+<Multi_key> <1> <KP_Divide> <6>: "⅙" U2159 # VULGAR FRACTION ONE SIXTH
+<Multi_key> <1> <U2044> <6>: "⅙" U2159 # VULGAR FRACTION ONE SIXTH
+<Multi_key> <5> <slash> <6>: "⅚" U215A # VULGAR FRACTION FIVE SIXTHS
+<Multi_key> <5> <KP_Divide> <6>: "⅚" U215A # VULGAR FRACTION FIVE SIXTHS
+<Multi_key> <5> <U2044> <6>: "⅚" U215A # VULGAR FRACTION FIVE SIXTHS
+<Multi_key> <1> <slash> <8>: "⅛" U215B # VULGAR FRACTION ONE EIGHTH
+<Multi_key> <1> <KP_Divide> <8>: "⅛" U215B # VULGAR FRACTION ONE EIGHTH
+<Multi_key> <1> <U2044> <8>: "⅛" U215B # VULGAR FRACTION ONE EIGHTH
+<Multi_key> <3> <slash> <8>: "⅜" U215C # VULGAR FRACTION THREE EIGHTHS
+<Multi_key> <3> <KP_Divide> <8>: "⅜" U215C # VULGAR FRACTION THREE EIGHTHS
+<Multi_key> <3> <U2044> <8>: "⅜" U215C # VULGAR FRACTION THREE EIGHTHS
+<Multi_key> <5> <slash> <8>: "⅝" U215D # VULGAR FRACTION FIVE EIGHTHS
+<Multi_key> <5> <KP_Divide> <8>: "⅝" U215D # VULGAR FRACTION FIVE EIGHTHS
+<Multi_key> <5> <U2044> <8>: "⅝" U215D # VULGAR FRACTION FIVE EIGHTHS
+<Multi_key> <7> <slash> <8>: "⅞" U215E # VULGAR FRACTION SEVEN EIGHTHS
+<Multi_key> <7> <KP_Divide> <8>: "⅞" U215E # VULGAR FRACTION SEVEN EIGHTHS
+<Multi_key> <7> <U2044> <8>: "⅞" U215E # VULGAR FRACTION SEVEN EIGHTHS
+<Multi_key> <1> <slash> <space>: "⅟" U215F # FRACTION NUMERATOR ONE
+<Multi_key> <1> <KP_Divide> <space>: "⅟" U215F # FRACTION NUMERATOR ONE
+<Multi_key> <1> <U2044> <space>: "⅟" U215F # FRACTION NUMERATOR ONE
+<Multi_key> <0> <slash> <3>: "↉" U2189 # VULGAR FRACTION ZERO THIRDS
+<Multi_key> <0> <KP_Divide> <3>: "↉" U2189 # VULGAR FRACTION ZERO THIRDS
+<Multi_key> <0> <U2044> <3>: "↉" U2189 # VULGAR FRACTION ZERO THIRDS
+
 
 <dead_tilde> <space>			: "˜"	U02DC # SMALL TILDE
 <dead_tilde> <dead_tilde>		: "˜"	U02DC # SMALL TILDE
