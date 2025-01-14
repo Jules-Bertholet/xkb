@@ -92,8 +92,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <LSGT> { [ z            , Z             , oe                   , OE                   , ezh, EZH] };
     //                                                                                          Latin chi  Latin CHI
     key <AB01> { [ x            , X             , ugrave               , Ugrave               , UAB53    , UA7B3] };
-    //                                                                                          Open o  Open O  c with bar  C with bar
-    key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 , UA793     , UA792     ] };
+    //                                                                                          Open o  Open O
+    key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 ] };
     //                                                                                                    d with tail  African D
     key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH, U0256      , U0189    ] };
     //                                                                                          turned v  turned V
