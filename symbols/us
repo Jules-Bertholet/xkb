@@ -37,8 +37,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
-    //                                                                                         Latin omega  Latin OMEGA  wynn   WYNN
-    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , UA7B7      , UA7B6      , U01BF, U01F7] };
+    //                                                                                         Latin omega  Latin OMEGA
+    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , UA7B7      , UA7B6      ] };
     //                                                                                         Egyptological ain  Egyptological AIN
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          , UA725            , UA724] };
     //                                                                                         glottal stop  GLOTTAL STOP  saltillo  SALTILLO  
