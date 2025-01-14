@@ -222,8 +222,13 @@
 <Multi_key> <0> <U2044> <3>: "↉" U2189 # VULGAR FRACTION ZERO THIRDS
 
 
+<dead_abovedot> <dead_breve> <nobreakspace>: "̐" U0310 # COMBINING CANDRABINDU
+<dead_stroke> <dead_tilde> <nobreakspace>: "͊" U034A # COMBINING NOT TILDE ABOVE
+<dead_abovedot> <dead_tilde> <dead_abovedot> <nobreakspace>: "͋" U034B # COMBINING HOMOTHETIC ABOVE
+<dead_tilde> <dead_tilde> <nobreakspace>: "͌"	U034C # COMBINING ALMOST EQUAL TO ABOVE
+<dead_invertedbreve> <dead_abovedot> <nobreakspace>: "͒" U0352 # COMBINING FERMATA
+
 <dead_tilde> <space>			: "˜"	U02DC # SMALL TILDE
-<dead_tilde> <dead_tilde>		: "˜"	U02DC # SMALL TILDE
 
 <dead_stroke> <bracketleft>			: "⹕"	U2E55 # LEFT SQUARE BRACKET WITH STROKE
 <dead_stroke> <bracketright>			: "⹖"	U2E56 # RIGHT SQUARE BRACKET WITH STROKE
@@ -498,5 +503,3 @@
 <dead_belowdot> <U1EE4>	: "Ṳ"	U1E72 # LATIN CAPITAL LETTER U WITH DIAERESIS BELOW
 <dead_belowdot> <U1EE5>	: "ṳ"	U1E73 # LATIN SMALL LETTER U WITH DIAERESIS BELOW
 <dead_belowdot> <dead_belowdot> <nobreakspace>:	"̤"	U0324 # COMBINING DIAERESIS BELOW
-
-<dead_abovedot> <dead_breve> <nobreakspace>: "̐" U0310 # COMBINING CANDRABINDU
