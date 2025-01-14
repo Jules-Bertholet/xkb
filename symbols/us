@@ -37,8 +37,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <TAB>  { [ Tab          , ISO_Left_Tab  , UFDD9               , NoSymbol            , UFDEF, UFDEE, UFDED, UFDEC ] };
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     key <AD01> { [ q            , Q             , adiaeresis          , Adiaeresis           ] };
-    //                                                                                         wynn   WYNN   Latin omega  Latin OMEGA
-    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , U01BF, U01F7, UA7B7      , UA7B6      ] };
+    //                                                                                         Latin omega  Latin OMEGA  wynn   WYNN
+    key <AD02> { [ w            , W             , ediaeresis          , Ediaeresis           , UA7B7      , UA7B6      , U01BF, U01F7] };
     //                                                                                         Egyptological ain  Egyptological AIN
     key <AD03> { [ f            , F             , ocircumflex         , Ocircumflex          , UA725            , UA724] };
     //                                                                                         glottal stop  GLOTTAL STOP  saltillo  SALTILLO  
@@ -58,11 +58,11 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AD10> { [ y            , Y             , udiaeresis          , Udiaeresis           , U0264     , UA7CB     , UA7DB       , UA7DA       ] };
     key.type[1] = "EIGHT_LEVEL";
     //                                                                                         Letter dead key
-    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , UFDD1          , dead_belowmacron ] };
+    key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , UFDD1          , dead_belowmacron] };
     //                                                                                                                              Inverted breve below
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           , dead_belowbreve, dead_invertedbreve, U032F] };
-    //                                                                  BULLET                WHITE BULLET  Double vertical bar
-    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022               , U25E6       , U2016              , brokenbar] };
+    //                                                                  BULLET                 WHITE BULLET  Double vertical bar
+    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022                , U25E6       , U2016              , brokenbar] };
 
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     //                                                                                         Latin alpha  Latin ALPHA  Egyplological alef  Egyptological ALEF

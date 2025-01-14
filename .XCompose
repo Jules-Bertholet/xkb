@@ -155,7 +155,11 @@
 <Multi_key> <Α> <KP_Divide> <C>: "⅍" U214D # AKTIESELSKAB
 <Multi_key> <Α> <U2044> <C>: "⅍" U214D # AKTIESELSKAB
 
-# Fractions
+# Welsh ligature
+<Multi_key> <L> <L>: "Ỻ" U1EFA # LATIN CAPITAL LETTER MIDDLE-WELSH LL
+<Multi_key> <l> <l>: "ỻ" U1EFB # LATIN SMALL LETTER MIDDLE-WELSH LL
+
+# Fractions - TODO kp digits
 <Multi_key> <1> <slash> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
 <Multi_key> <1> <KP_Divide> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
 <Multi_key> <1> <U2044> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
