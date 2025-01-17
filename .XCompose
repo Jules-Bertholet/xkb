@@ -228,6 +228,8 @@
 <dead_tilde> <dead_tilde> <nobreakspace>: "͌"	U034C # COMBINING ALMOST EQUAL TO ABOVE
 <dead_invertedbreve> <dead_abovedot> <nobreakspace>: "͒" U0352 # COMBINING FERMATA
 
+<Multi_key> <Greek_CHI> <Greek_RHO>: "☧" U2627 # CHI RHO
+
 <dead_tilde> <space>			: "˜"	U02DC # SMALL TILDE
 
 <dead_stroke> <bracketleft>			: "⹕"	U2E55 # LEFT SQUARE BRACKET WITH STROKE

@@ -74,7 +74,7 @@ xkb_symbols "colemak_dh_wide_am" {
     //                                                                                                      t with diagonal stroke  T with diagonal stroke
     key <AC04> { [ t            , T             , atilde              , Atilde              , thorn, THORN, U2C66                 , U023E                 ] };
     //                                                                                         yogh   YOGH   Latin gamma  latin GAMMA
-    key <AC05> { [ g            , G             , aring               , Aring                , U201D, U201C, U0263      , U0194 ] };
+    key <AC05> { [ g            , G             , aring               , Aring                , U021D, U021C, U0263      , U0194 ] };
     //                                            SINGLE RIGHT-POINTING ANGLE QUOTATION MARK  BOTTOM RIGHT HALF BRACKET TOP RIGHT HALF BRACKET RIGHT SQUARE BRACKET WITH QUILL  RIGHT VERTICAL BAR WITH QUILL
     key <AC06> { [ bracketright , braceright    , guillemetright      , U203A               , U2E25                    , U2E23,              U2046                            , U2E21     ],
                  type[1] = "EIGHT_LEVEL" };
