@@ -1,3 +1,5 @@
+include %L
+
 # numpad
 
 <UFDE4> <KP_1>          : "a" a
@@ -317,10 +319,10 @@
 <dead_acute> <dead_acute>			: "´"	acute # ACUTE ACCENT
 <dead_acute> <dead_acute> <space>		: "˝"	U2dd # DOUBLE ACUTE ACCENT
 <dead_acute> <dead_acute> <dead_acute>		: "˝"	U2dd # DOUBLE ACUTE ACCENT
-<dead_acute> <dead_acute> <O>			: "Ő"	U0150 # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
-<dead_acute> <Oacute>				: "Ő"	U0150 # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
-<dead_acute> <dead_acute> <o>			: "ő"	U0151 # LATIN SMALL LETTER O WITH DOUBLE ACUTE
-<dead_acute> <oacute>				: "ő"	U0151 # LATIN SMALL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <O>			: "Ő"	Odoubleacute # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <Oacute>				: "Ő"	Odoubleacute # LATIN CAPITAL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <dead_acute> <o>			: "ő"	odoubleacute # LATIN SMALL LETTER O WITH DOUBLE ACUTE
+<dead_acute> <oacute>				: "ő"	odoubleacute # LATIN SMALL LETTER O WITH DOUBLE ACUTE
 <dead_acute> <dead_acute> <U>			: "Ű"	U0170 # LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
 <dead_acute> <Uacute>				: "Ű"	U0170 # LATIN CAPITAL LETTER U WITH DOUBLE ACUTE
 <dead_acute> <dead_acute> <u>			: "ű"	U0171 # LATIN SMALL LETTER U WITH DOUBLE ACUTE
