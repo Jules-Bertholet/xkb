@@ -15,8 +15,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AE02> { [ 2            , at            , degree              , dead_abovering      , copyright, registered, dead_belowring, phonographcopyright ] };
     //                                                                                TRIPLE DAGGER
     key <AE03> { [ 3            , numbersign    , dagger              , doubledagger        , U2E4B, figdash] };
-    //                                                                                        Right half ring  Left half ring  Glottal dead key
-    key <AE04> { [ 4            , dollar        , cent                , dead_currency       , U02BF          , U02BE         , UFDD0] };
+    //                                                                                        Right half ring  Left half ring
+    key <AE04> { [ 4            , dollar        , cent                , dead_currency       , U02BE          , U02BF         , dead_abovecomma] };
     //                                                                                         PER TEN THOUSAND COMMERCIAL MINUS
     key <AE05> { [ 5            , percent       , EuroSign            , permille            , U2031           , U2052           ] };
     //                                                                                                              Combining caron below         CARET INSERTION POINT
