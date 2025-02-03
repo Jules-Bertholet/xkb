@@ -159,9 +159,35 @@ include %L
 <Multi_key> <Α> <KP_Divide> <C>: "⅍" U214D # AKTIESELSKAB
 <Multi_key> <Α> <U2044> <C>: "⅍" U214D # AKTIESELSKAB
 
-# Welsh ligature
+# Ligatures & digraphs
 <Multi_key> <L> <L>: "Ỻ" U1EFA # LATIN CAPITAL LETTER MIDDLE-WELSH LL
 <Multi_key> <l> <l>: "ỻ" U1EFB # LATIN SMALL LETTER MIDDLE-WELSH LL
+<Multi_key> <H> <ENG>: "Ꜧ" UA726 # LATIN CAPITAL LETTER HENG
+<Multi_key> <h> <eng>: "ꜧ" UA727 # LATIN SMALL LETTER HENG
+<Multi_key> <T> <EZH>: "Ꜩ" UA728 # LATIN CAPITAL LETTER TZ
+<Multi_key> <t> <ezh>: "ꜩ" UA729 # LATIN SMALL LETTER TZ
+<Multi_key> <A> <A>: "Ꜳ" UA732 # LATIN CAPITAL LETTER AA
+<Multi_key> <a> <a>: "ꜳ" UA733 # LATIN SMALL LETTER AA
+<Multi_key> <A> <O>: "Ꜵ" UA734 # LATIN CAPITAL LETTER AO
+<Multi_key> <a> <o>: "ꜵ" UA735 # LATIN SMALL LETTER AO
+<Multi_key> <A> <U>: "Ꜷ" UA736 # LATIN CAPITAL LETTER AU
+<Multi_key> <a> <u>: "ꜷ" UA737 # LATIN SMALL LETTER AU
+<Multi_key> <A> <V>: "Ꜹ" UA738 # LATIN CAPITAL LETTER AV
+<Multi_key> <a> <v>: "ꜹ" UA739 # LATIN SMALL LETTER AV
+<dead_stroke> <Multi_key> <A> <V>: "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL STROKE
+<Multi_key> <dead_stroke>  <A> <V>: "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL STROKE
+<dead_stroke> <Multi_key> <a> <v>: "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL STROKE
+<Multi_key> <dead_stroke> <a> <v>: "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL STROKE
+<Multi_key> <A> <Y>: "Ꜽ" UA73C # LATIN CAPITAL LETTER AY
+<Multi_key> <a> <y>: "ꜽ" UA73D # LATIN SMALL LETTER AY
+<Multi_key> <O> <O>: "Ꝏ" UA74E # LATIN CAPITAL LETTER OO
+<Multi_key> <o> <o>: "ꝏ" UA74F # LATIN SMALL LETTER OO
+<Multi_key> <V> <Y>: "Ꝡ" UA760 # LATIN CAPITAL LETTER VY
+<Multi_key> <Y> <Y>: "Ꝡ" UA760 # LATIN CAPITAL LETTER VY
+<Multi_key> <v> <y>: "ꝡ" UA761 # LATIN SMALL LETTER VY
+<Multi_key> <y> <y>: "ꝡ" UA761 # LATIN SMALL LETTER VY
+<Multi_key> <U1EFC> <U1EFC>: "Ꟃ" UA7C2 # LATIN CAPITAL LETTER ANGLICANA W
+<Multi_key> <U1EFD> <U1EFD>: "ꟃ" UA7C3 # LATIN SMALL LETTER ANGLICANA W
 
 # Fractions - TODO kp digits
 <Multi_key> <1> <slash> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
