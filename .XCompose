@@ -128,6 +128,9 @@ include %L
 <dead_hook> <dead_belowdot> <UFDD1> <bar>: "𝼊"	U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 # Sinological dot
 <UFDD1> <periodcentered>: "ꞏ" UA78F # LATIN LETTER SINOLOGICAL DOT
+<dead_abovedot> <UFDD1> <periodcentered>: "˸" U02F8 # MODIFIER LETTER RAISED COLON
+<dead_abovedot> <UA78F>: "˸" U02F8 # MODIFIER LETTER RAISED COLON
+<dead_abovedot> <periodcentered>: "˸" U02F8 # MODIFIER LETTER RAISED COLON
 
 # Letterlike symbols
 <Multi_key> <a> <slash> <c>: "℀" U2100 # ACCOUNT OF
