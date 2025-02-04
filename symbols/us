@@ -61,8 +61,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AD11> { [ semicolon    , colon         , dead_belowcomma     , dead_macron          , UFDD1          , dead_belowmacron] };
     //                                                                                                                              Inverted breve below
     key <AD12> { [ apostrophe   , quotedbl      , dead_acute          , dead_breve           , dead_belowbreve, dead_invertedbreve, U032F] };
-    //                                                                  BULLET                 WHITE BULLET  Double vertical bar             Sinological dot
-    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022                , U25E6       , U2016              , brokenbar, UA78F] };
+    //                                                                  BULLET                 WHITE BULLET  Double vertical bar             Bilabial click
+    key <BKSL> { [ backslash    , bar           , periodcentered      , U2022                , U25E6       , U2016              , brokenbar, U0298] };
 
     key.type[1] = "EIGHT_LEVEL_ALPHABETIC";
     //                                                                                         Latin alpha  Latin ALPHA  Egyplological alef  Egyptological ALEF

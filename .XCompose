@@ -126,6 +126,8 @@ include %L
 <dead_belowdot> <UFDD1> <bar>: "ǃ"	U01C3 # LATIN LETTER RETROFLEX CLICK
 <dead_hook> <UFDD1> <exclam>: "𝼊"	U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <dead_hook> <dead_belowdot> <UFDD1> <bar>: "𝼊"	U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+# Sinological dot
+<UFDD1> <periodcentered>: "ꞏ" UA78F # LATIN LETTER SINOLOGICAL DOT
 
 # Letterlike symbols
 <Multi_key> <a> <slash> <c>: "℀" U2100 # ACCOUNT OF
@@ -163,6 +165,7 @@ include %L
 <Multi_key> <Α> <U2044> <C>: "⅍" U214D # AKTIESELSKAB
 
 # Ligatures & digraphs
+<Multi_key> <l> <ezh>: "ɮ" U026E # LATIN SMALL LETTER LEZH
 <Multi_key> <L> <L>: "Ỻ" U1EFA # LATIN CAPITAL LETTER MIDDLE-WELSH LL
 <Multi_key> <l> <l>: "ỻ" U1EFB # LATIN SMALL LETTER MIDDLE-WELSH LL
 <Multi_key> <H> <ENG>: "Ꜧ" UA726 # LATIN CAPITAL LETTER HENG
