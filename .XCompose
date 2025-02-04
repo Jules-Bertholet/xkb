@@ -123,6 +123,9 @@ include %L
 <UFDD1> <U2016>: "ǁ"	U01C1 # LATIN LETTER LATERAL CLICK
 <UFDD1> <doubledagger>: "ǂ"	U01C2 # LATIN LETTER ALVEOLAR CLICK
 <UFDD1> <exclam>: "ǃ"	U01C3 # LATIN LETTER RETROFLEX CLICK
+<dead_belowdot> <UFDD1> <bar>: "ǃ"	U01C3 # LATIN LETTER RETROFLEX CLICK
+<dead_hook> <UFDD1> <exclam>: "𝼊"	U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+<dead_hook> <dead_belowdot> <UFDD1> <bar>: "𝼊"	U1DF0A # LATIN LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 
 # Letterlike symbols
 <Multi_key> <a> <slash> <c>: "℀" U2100 # ACCOUNT OF
@@ -175,9 +178,7 @@ include %L
 <Multi_key> <A> <V>: "Ꜹ" UA738 # LATIN CAPITAL LETTER AV
 <Multi_key> <a> <v>: "ꜹ" UA739 # LATIN SMALL LETTER AV
 <dead_stroke> <Multi_key> <A> <V>: "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL STROKE
-<Multi_key> <dead_stroke>  <A> <V>: "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL STROKE
 <dead_stroke> <Multi_key> <a> <v>: "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL STROKE
-<Multi_key> <dead_stroke> <a> <v>: "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL STROKE
 <Multi_key> <A> <Y>: "Ꜽ" UA73C # LATIN CAPITAL LETTER AY
 <Multi_key> <a> <y>: "ꜽ" UA73D # LATIN SMALL LETTER AY
 <Multi_key> <O> <O>: "Ꝏ" UA74E # LATIN CAPITAL LETTER OO
