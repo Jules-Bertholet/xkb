@@ -96,8 +96,8 @@ xkb_symbols "colemak_dh_wide_am" {
     key <AB02> { [ c            , C             , ccedilla             , Ccedilla             , U0254 , U0186 ] };
     //                                                                                                    d with tail  African D
     key <AB03> { [ d            , D             , egrave               , Egrave               , eth, ETH, U0256      , U0189    ] };
-    //                                                                                          turned v  turned V  Middle-Welsh v  Middle-Welsh V
-    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245   , U1EFD         , U1EFC         ] };
+    //                                                                                          turned v  turned V
+    key <AB04> { [ v            , V             , otilde               , Otilde               , U028C   , U0245   ] };
     key <AB05> { [ z            , Z             , oe                   , OE                   , ezh, EZH] };
     //                                                                      REVERSED QUESTION MARK     Glottal stop  Pharyngeal voiced fricative
     key <AB06> { [ slash        , question      , questiondown         , dead_stroke         , U2E2E , U0294       , U0295                      ],
