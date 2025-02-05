@@ -118,6 +118,21 @@ include %L
 <UFDD1> <U0330>: "˷"	U02F7 # MODIFIER LETTER LOW TILDE
 <UFDD1> <colon>: "꞉"	UA789 # MODIFIER LETTER COLON
 <UFDD1> <equal>: "꞊"	UA78A # MODIFIER LETTER SHORT EQUALS SIGN
+# Chinantec tone marks - TODO shorten
+<UFDD1> <Multi_key> <dead_abovedot> <U030D>: "ꜗ"	UA717 # MODIFIER LETTER DOT VERTICAL BAR
+<UFDD1> <Multi_key> <U0307> <U030D>: "ꜗ"	UA717 # MODIFIER LETTER DOT VERTICAL BAR
+<UFDD1> <Multi_key> <dead_abovedot> <acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <U0307> <acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <dead_abovedot> <dead_acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <U0307> <dead_acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <dead_abovedot> <combining_acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <U0307> <combining_acute>: "ꜘ"	UA718 # MODIFIER LETTER DOT SLASH
+<UFDD1> <Multi_key> <dead_abovedot> <macron>: "ꜙ"	UA719 # MODIFIER LETTER DOT HORIZONTAL BAR
+<UFDD1> <Multi_key> <U0307> <macron>: "ꜙ"	UA719 # MODIFIER LETTER DOT HORIZONTAL BAR
+<UFDD1> <Multi_key> <dead_abovedot> <dead_macron>: "ꜙ"	UA719 # MODIFIER LETTER DOT HORIZONTAL BAR
+<UFDD1> <Multi_key> <U0307> <dead_macron>: "ꜙ"	UA719 # MODIFIER LETTER DOT HORIZONTAL BAR
+<UFDD1> <Multi_key> <macron> <U030D>: "ꜚ"	UA71A # MODIFIER LETTER LOWER RIGHT CORNER ANGLE
+<UFDD1> <Multi_key> <dead_macron> <U030D>: "ꜚ"	UA71A # MODIFIER LETTER LOWER RIGHT CORNER ANGLE
 # Click letters
 <UFDD1> <bar>: "ǀ"	U01C0 # LATIN LETTER DENTAL CLICK
 <UFDD1> <U2016>: "ǁ"	U01C1 # LATIN LETTER LATERAL CLICK
