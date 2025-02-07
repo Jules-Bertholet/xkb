@@ -211,6 +211,12 @@ include %L
 <Multi_key> <U1EFC> <U1EFC>: "Ꟃ" UA7C2 # LATIN CAPITAL LETTER ANGLICANA W
 <Multi_key> <U1EFD> <U1EFD>: "ꟃ" UA7C3 # LATIN SMALL LETTER ANGLICANA W
 
+# Doubled
+<Multi_key> <U27E8> <U27E8>: "⟪" U27EA # MATHEMATICAL LEFT DOUBLE ANGLE BRACKET
+<Multi_key> <U27EB> <U27EB>: "⟫" U27EB # MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET
+<Multi_key> <parenleft> <parenleft>: "⸨" U2E28 # LEFT DOUBLE PARENTHESIS
+<Multi_key> <parenright> <parenright>: "⸩" U2E29 # RIGHT DOUBLE PARENTHESIS
+
 # Fractions - TODO kp digits
 <Multi_key> <1> <slash> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
 <Multi_key> <1> <KP_Divide> <4>: "¼" onequarter # VULGAR FRACTION ONE QUARTER
